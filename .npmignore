@@ -17,6 +17,7 @@ yarn.lock
 src
 test
 examples
+utils
 CHANGELOG.md
 .travis.yml
 .editorconfig
@@ -26,6 +27,7 @@ CHANGELOG.md
 .babelrc
 .gitignore
 .prettierrc
+dw.json
 
 # visual studio code config
 .vscode

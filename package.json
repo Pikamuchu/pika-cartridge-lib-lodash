@@ -1,6 +1,6 @@
 {
     "name": "cartridge_lib_lodash",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Cartridge library from lodash node module",
     "main": "cartridges/lib_lodash/cartridge/scripts/lib/lodash/index.js",
     "engines": {

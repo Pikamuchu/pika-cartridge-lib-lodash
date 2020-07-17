@@ -35,7 +35,7 @@ This cartridge library is a babel transpilation to ES5 with some minor changes i
 The main lodash module can be loaded using as a standard SFRA script using
 
 ````
-var _ = require('*/cartridge/script/lib/lodash/index');
+var _ = require('*/cartridge/scripts/lib/lodash/index');
 ````
 
 See [lodash](https://www.npmjs.com/package/lodash) documentation for module usage.
