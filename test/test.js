@@ -1,20 +1,21 @@
-import sinon from 'sinon';
-import { assert } from 'chai';
-import searchquire from 'searchquire';
+var sinon = require('sinon');
+var { assert } = require('chai');
+var searchquire = require('searchquire');
 
 describe('lodash library', () => {
-    let lodash;
+    let _array;
 
     before(() => {
         // initialize test config and spies
-        lodash = searchquire(
-            '*/cartridge/scripts/lib/lodash/index',
+        _array = searchquire(
+            '*/cartridge/scripts/lib/lodash/array',
             {
                 basePath: '../cartridges/lib_lodash/cartridge',
                 pattern: '*/cartridge/(.*)',
                 maxSearchModuleIterations: 20
             },
-            {}
+            {
+            }
         );
     });
 
@@ -24,7 +25,7 @@ describe('lodash library', () => {
 
     describe('lodash initialization', () => {
         it('lodash defined', () => {
-            assert.isDefined(lodash);
+            assert.isDefined(_array);
         });
     });
 });

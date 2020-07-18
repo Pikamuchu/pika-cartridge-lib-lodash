@@ -59,7 +59,7 @@ const main = () => {
 const babelTransform = (source, destination) => {
     console.log(`Babel Transforming module "${source}" to "${destination}"...`);
     const babel = path.sep === '/' ? 'babel' : 'babel.cmd';
-    const only = [`${source}/*.js`, `${source}/lib`, `${source}/main`];
+    const only = [`${source}/**/*.js`];
     const result = spawnSync(babel, [source, '-d', destination, '--only', only, '--ignore', BABEL_IGNORE_FILES]);
     if (result.error && result.error.errno) {
         console.error(result.error);

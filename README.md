@@ -6,7 +6,9 @@
 
 ## Introduction
 
-Cartridge library from [lodash](https://www.npmjs.com/package/lodash) npm node module
+Cartridge library from [lodash](https://www.npmjs.com/package/lodash) npm node module version 3.10.1
+
+... Work in progress ...
 
 ## Build with
 
@@ -32,10 +34,14 @@ npm i cartridge_lib_lodash
 
 This cartridge library is a babel transpilation to ES5 with some minor changes in order to be usable as a standard SFRA cartridge.
 
-The main lodash module can be loaded using as a standard SFRA script using
+Lodash modules can be loaded using require cartridge as a standard SFRA script.
 
 ````
-var _ = require('*/cartridge/scripts/lib/lodash/index');
+// lodash modules can be loaded separately using
+var _array = require('*/cartridge/scripts/lib/lodash/array');
+var _chain = require('*/cartridge/scripts/lib/lodash/chain');
+var _collection = require('*/cartridge/scripts/lib/lodash/collection');
+...
 ````
 
-See [lodash](https://www.npmjs.com/package/lodash) documentation for module usage.
+See [lodash docs](https://lodash.com/docs/3.10.1) documentation for module usage.

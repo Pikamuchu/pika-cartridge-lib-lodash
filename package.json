@@ -11,7 +11,7 @@
         "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
         "lint": "sgmf-scripts --lint js",
         "prettier": "prettier --write ./cartridges/**/*.js",
-        "test": "nyc mocha --require @babel/register --timeout 20000",
+        "test": "nyc mocha --timeout 20000",
         "upload": "sgmf-scripts --upload -- ",
         "uploadCartridge": "sgmf-scripts --uploadCartridge lib_lodash"
     },
@@ -31,7 +31,7 @@
     },
     "homepage": "https://github.com/pikamachu/pika-cartridge-lib-lodash",
     "devDependencies": {
-        "lodash": "4.17.19",
+        "lodash": "3.10.1",
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.0",
         "@babel/node": "^7.8.7",
