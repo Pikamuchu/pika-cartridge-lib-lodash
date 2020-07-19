@@ -3,6 +3,7 @@ var baseCallback = require('../internal/baseCallback'),
     baseSortBy = require('../internal/baseSortBy'),
     compareAscending = require('../internal/compareAscending'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Creates an array of elements, sorted in ascending order by the results of
  * running each element in a collection through `iteratee`. This method performs
@@ -51,7 +52,6 @@ var baseCallback = require('../internal/baseCallback'),
  * _.pluck(_.sortBy(users, 'user'), 'user');
  * // => ['barney', 'fred', 'pebbles']
  */
-
 function sortBy(collection, iteratee, thisArg) {
     if (collection == null) {
         return [];

@@ -1,5 +1,6 @@
 var baseCreate = require('./baseCreate'),
     baseLodash = require('./baseLodash');
+
 /**
  * The base constructor for creating `lodash` wrapper objects.
  *
@@ -8,7 +9,6 @@ var baseCreate = require('./baseCreate'),
  * @param {boolean} [chainAll] Enable chaining for all wrapper methods.
  * @param {Array} [actions=[]] Actions to peform to resolve the unwrapped value.
  */
-
 function LodashWrapper(value, chainAll, actions) {
     this.__wrapped__ = value;
     this.__actions__ = actions || [];

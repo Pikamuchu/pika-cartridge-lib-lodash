@@ -1,5 +1,6 @@
 var baseClone = require('../internal/baseClone'),
     bindCallback = require('../internal/bindCallback');
+
 /**
  * Creates a deep clone of `value`. If `customizer` is provided it's invoked
  * to produce the cloned values. If `customizer` returns `undefined` cloning
@@ -45,7 +46,6 @@ var baseClone = require('../internal/baseClone'),
  * el.childNodes.length;
  * // => 20
  */
-
 function cloneDeep(value, customizer, thisArg) {
     return typeof customizer == 'function'
         ? baseClone(value, true, bindCallback(customizer, thisArg, 3))

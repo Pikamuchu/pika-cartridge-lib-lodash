@@ -1,6 +1,7 @@
 var baseSortByOrder = require('../internal/baseSortByOrder'),
     isArray = require('../lang/isArray'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * This method is like `_.sortByAll` except that it allows specifying the
  * sort orders of the iteratees to sort by. If `orders` is unspecified, all
@@ -35,7 +36,6 @@ var baseSortByOrder = require('../internal/baseSortByOrder'),
  * _.map(_.sortByOrder(users, ['user', 'age'], ['asc', 'desc']), _.values);
  * // => [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 42]]
  */
-
 function sortByOrder(collection, iteratees, orders, guard) {
     if (collection == null) {
         return [];

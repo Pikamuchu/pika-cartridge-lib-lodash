@@ -1,5 +1,6 @@
 var baseCallback = require('./baseCallback'),
     baseForOwn = require('./baseForOwn');
+
 /**
  * Creates a function for `_.mapKeys` or `_.mapValues`.
  *
@@ -7,7 +8,6 @@ var baseCallback = require('./baseCallback'),
  * @param {boolean} [isMapKeys] Specify mapping keys instead of values.
  * @returns {Function} Returns the new map function.
  */
-
 function createObjectMapper(isMapKeys) {
     return function(object, iteratee, thisArg) {
         var result = {};

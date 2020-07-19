@@ -1,5 +1,6 @@
 var baseMatches = require('../internal/baseMatches'),
     filter = require('./filter');
+
 /**
  * Performs a deep comparison between each element in `collection` and the
  * source object, returning an array of all elements that have equivalent
@@ -29,7 +30,6 @@ var baseMatches = require('../internal/baseMatches'),
  * _.pluck(_.where(users, { 'pets': ['dino'] }), 'user');
  * // => ['fred']
  */
-
 function where(collection, source) {
     return filter(collection, baseMatches(source));
 }

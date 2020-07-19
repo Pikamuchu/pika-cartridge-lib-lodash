@@ -1,5 +1,6 @@
 /** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
+
 /**
  * Creates a function that invokes `func` with the `this` binding of the created
  * function and an array of arguments much like [`Function#apply`](https://es5.github.io/#x15.3.4.3).
@@ -31,7 +32,6 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  * }));
  * // => a Promise of 76
  */
-
 function spread(func) {
     if (typeof func != 'function') {
         throw new TypeError(FUNC_ERROR_TEXT);

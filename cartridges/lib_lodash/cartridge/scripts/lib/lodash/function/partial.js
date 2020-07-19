@@ -1,7 +1,8 @@
 var createPartial = require('../internal/createPartial');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var PARTIAL_FLAG = 32;
+
 /**
  * Creates a function that invokes `func` with `partial` arguments prepended
  * to those provided to the new function. This method is like `_.bind` except
@@ -34,7 +35,6 @@ var PARTIAL_FLAG = 32;
  * greetFred('hi');
  * // => 'hi fred'
  */
-
 var partial = createPartial(PARTIAL_FLAG); // Assign default placeholders.
 
 partial.placeholder = {};

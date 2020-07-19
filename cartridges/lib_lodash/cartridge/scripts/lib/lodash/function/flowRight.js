@@ -1,4 +1,5 @@
 var createFlow = require('../internal/createFlow');
+
 /**
  * This method is like `_.flow` except that it creates a function that
  * invokes the provided functions from right to left.
@@ -19,6 +20,5 @@ var createFlow = require('../internal/createFlow');
  * addSquare(1, 2);
  * // => 9
  */
-
 var flowRight = createFlow(true);
 module.exports = flowRight;

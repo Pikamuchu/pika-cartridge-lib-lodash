@@ -1,6 +1,7 @@
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max,
     nativeMin = Math.min;
+
 /**
  * Checks if `n` is between `start` and up to but not including, `end`. If
  * `end` is not specified it's set to `start` with `start` then set to `0`.
@@ -32,7 +33,6 @@ var nativeMax = Math.max,
  * _.inRange(5.2, 4);
  * // => false
  */
-
 function inRange(value, start, end) {
     start = +start || 0;
 

@@ -1,6 +1,7 @@
 var getLength = require('./getLength'),
     isLength = require('./isLength'),
     toObject = require('./toObject');
+
 /**
  * Creates a `baseEach` or `baseEachRight` function.
  *
@@ -9,7 +10,6 @@ var getLength = require('./getLength'),
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new base function.
  */
-
 function createBaseEach(eachFunc, fromRight) {
     return function(collection, iteratee) {
         var length = collection ? getLength(collection) : 0;

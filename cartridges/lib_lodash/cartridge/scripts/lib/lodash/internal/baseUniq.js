@@ -1,9 +1,10 @@
 var baseIndexOf = require('./baseIndexOf'),
     cacheIndexOf = require('./cacheIndexOf'),
     createCache = require('./createCache');
-/** Used as the size to enable large array optimizations. */
 
+/** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
+
 /**
  * The base implementation of `_.uniq` without support for callback shorthands
  * and `this` binding.
@@ -13,7 +14,6 @@ var LARGE_ARRAY_SIZE = 200;
  * @param {Function} [iteratee] The function invoked per iteration.
  * @returns {Array} Returns the new duplicate free array.
  */
-
 function baseUniq(array, iteratee) {
     var index = -1,
         indexOf = baseIndexOf,

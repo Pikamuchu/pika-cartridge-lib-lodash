@@ -1,5 +1,6 @@
 var keys = require('./keys'),
     toObject = require('../internal/toObject');
+
 /**
  * Creates a two dimensional array of the key-value pairs for `object`,
  * e.g. `[[key1, value1], [key2, value2]]`.
@@ -14,7 +15,6 @@ var keys = require('./keys'),
  * _.pairs({ 'barney': 36, 'fred': 40 });
  * // => [['barney', 36], ['fred', 40]] (iteration order is not guaranteed)
  */
-
 function pairs(object) {
     object = toObject(object);
     var index = -1,

@@ -2,6 +2,7 @@ var baseToString = require('../internal/baseToString'),
     charsLeftIndex = require('../internal/charsLeftIndex'),
     isIterateeCall = require('../internal/isIterateeCall'),
     trimmedLeftIndex = require('../internal/trimmedLeftIndex');
+
 /**
  * Removes leading whitespace or specified characters from `string`.
  *
@@ -20,7 +21,6 @@ var baseToString = require('../internal/baseToString'),
  * _.trimLeft('-_-abc-_-', '_-');
  * // => 'abc-_-'
  */
-
 function trimLeft(string, chars, guard) {
     var value = string;
     string = baseToString(string);

@@ -1,4 +1,5 @@
 var createSortedIndex = require('../internal/createSortedIndex');
+
 /**
  * This method is like `_.sortedIndex` except that it returns the highest
  * index at which `value` should be inserted into `array` in order to
@@ -19,6 +20,5 @@ var createSortedIndex = require('../internal/createSortedIndex');
  * _.sortedLastIndex([4, 4, 5, 5], 5);
  * // => 4
  */
-
 var sortedLastIndex = createSortedIndex(true);
 module.exports = sortedLastIndex;

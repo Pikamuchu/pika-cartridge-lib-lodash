@@ -1,9 +1,10 @@
-var global = Function('return this')();
+var global = require('../internal/global');
 var baseToString = require('../internal/baseToString');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeFloor = Math.floor,
     nativeIsFinite = global.isFinite;
+
 /**
  * Repeats the given string `n` times.
  *
@@ -24,7 +25,6 @@ var nativeFloor = Math.floor,
  * _.repeat('abc', 0);
  * // => ''
  */
-
 function repeat(string, n) {
     var result = '';
     string = baseToString(string);

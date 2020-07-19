@@ -6,6 +6,7 @@ var arrayEach = require('../internal/arrayEach'),
     isFunction = require('../lang/isFunction'),
     isObject = require('../lang/isObject'),
     isTypedArray = require('../lang/isTypedArray');
+
 /**
  * An alternative to `_.reduce`; this method transforms `object` to a new
  * `accumulator` object which is the result of running each of its own enumerable
@@ -35,7 +36,6 @@ var arrayEach = require('../internal/arrayEach'),
  * });
  * // => { 'a': 3, 'b': 6 }
  */
-
 function transform(object, iteratee, accumulator, thisArg) {
     var isArr = isArray(object) || isTypedArray(object);
     iteratee = baseCallback(iteratee, thisArg, 4);

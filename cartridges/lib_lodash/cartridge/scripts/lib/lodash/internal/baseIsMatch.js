@@ -1,5 +1,6 @@
 var baseIsEqual = require('./baseIsEqual'),
     toObject = require('./toObject');
+
 /**
  * The base implementation of `_.isMatch` without support for callback
  * shorthands and `this` binding.
@@ -10,7 +11,6 @@ var baseIsEqual = require('./baseIsEqual'),
  * @param {Function} [customizer] The function to customize comparing objects.
  * @returns {boolean} Returns `true` if `object` is a match, else `false`.
  */
-
 function baseIsMatch(object, matchData, customizer) {
     var index = matchData.length,
         length = index,

@@ -1,12 +1,13 @@
 var baseToString = require('../internal/baseToString'),
     isIterateeCall = require('../internal/isIterateeCall');
-/** Used to match words to create compound words. */
 
+/** Used to match words to create compound words. */
 var reWords = (function() {
     var upper = '[A-Z\\xc0-\\xd6\\xd8-\\xde]',
         lower = '[a-z\\xdf-\\xf6\\xf8-\\xff]+';
     return RegExp(upper + '+(?=' + upper + lower + ')|' + upper + '?' + lower + '|' + upper + '+|[0-9]+', 'g');
 })();
+
 /**
  * Splits `string` into an array of its words.
  *
@@ -25,7 +26,6 @@ var reWords = (function() {
  * _.words('fred, barney, & pebbles', /[^, ]+/g);
  * // => ['fred', 'barney', '&', 'pebbles']
  */
-
 function words(string, pattern, guard) {
     if (guard && isIterateeCall(string, pattern, guard)) {
         pattern = undefined;

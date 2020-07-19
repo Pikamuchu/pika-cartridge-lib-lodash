@@ -1,5 +1,6 @@
 var baseCallback = require('../internal/baseCallback'),
     basePullAt = require('../internal/basePullAt');
+
 /**
  * Removes all elements from `array` that `predicate` returns truthy for
  * and returns an array of the removed elements. The predicate is bound to
@@ -39,7 +40,6 @@ var baseCallback = require('../internal/baseCallback'),
  * console.log(evens);
  * // => [2, 4]
  */
-
 function remove(array, predicate, thisArg) {
     var result = [];
 

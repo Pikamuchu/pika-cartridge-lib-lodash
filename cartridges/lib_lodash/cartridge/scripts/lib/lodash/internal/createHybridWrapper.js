@@ -1,4 +1,4 @@
-var global = Function('return this')();
+var global = require('./global');
 var arrayCopy = require('./arrayCopy'),
     composeArgs = require('./composeArgs'),
     composeArgsRight = require('./composeArgsRight'),
@@ -7,8 +7,8 @@ var arrayCopy = require('./arrayCopy'),
     reorder = require('./reorder'),
     replaceHolders = require('./replaceHolders'),
     setData = require('./setData');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var BIND_FLAG = 1,
     BIND_KEY_FLAG = 2,
     CURRY_BOUND_FLAG = 4,
@@ -17,9 +17,10 @@ var BIND_FLAG = 1,
     PARTIAL_FLAG = 32,
     PARTIAL_RIGHT_FLAG = 64,
     ARY_FLAG = 128;
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Creates a function that wraps `func` and invokes it with optional `this`
  * binding of, partial application, and currying.
@@ -37,7 +38,6 @@ var nativeMax = Math.max;
  * @param {number} [arity] The arity of `func`.
  * @returns {Function} Returns the new wrapped function.
  */
-
 function createHybridWrapper(
     func,
     bitmask,

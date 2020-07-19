@@ -1,16 +1,17 @@
 var baseWrapperValue = require('./baseWrapperValue'),
     getView = require('./getView'),
     isArray = require('../lang/isArray');
+
 /** Used as the size to enable large array optimizations. */
-
 var LARGE_ARRAY_SIZE = 200;
-/** Used to indicate the type of lazy iteratees. */
 
+/** Used to indicate the type of lazy iteratees. */
 var LAZY_FILTER_FLAG = 1,
     LAZY_MAP_FLAG = 2;
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Extracts the unwrapped value from its lazy wrapper.
  *
@@ -19,7 +20,6 @@ var nativeMin = Math.min;
  * @memberOf LazyWrapper
  * @returns {*} Returns the unwrapped value.
  */
-
 function lazyValue() {
     var array = this.__wrapped__.value(),
         dir = this.__dir__,

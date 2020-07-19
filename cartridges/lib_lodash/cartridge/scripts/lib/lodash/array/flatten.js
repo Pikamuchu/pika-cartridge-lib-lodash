@@ -1,5 +1,6 @@
 var baseFlatten = require('../internal/baseFlatten'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Flattens a nested array. If `isDeep` is `true` the array is recursively
  * flattened, otherwise it's only flattened a single level.
@@ -20,7 +21,6 @@ var baseFlatten = require('../internal/baseFlatten'),
  * _.flatten([1, [2, 3, [4]]], true);
  * // => [1, 2, 3, 4]
  */
-
 function flatten(array, isDeep, guard) {
     var length = array ? array.length : 0;
 

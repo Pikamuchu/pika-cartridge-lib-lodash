@@ -1,16 +1,17 @@
 var isObject = require('./isObject');
+
 /** `Object#toString` result references. */
-
 var funcTag = '[object Function]';
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * Checks if `value` is classified as a `Function` object.
  *
@@ -27,7 +28,6 @@ var objToString = objectProto.toString;
  * _.isFunction(/abc/);
  * // => false
  */
-
 function isFunction(value) {
     // The use of `Object#toString` avoids issues with the `typeof` operator
     // in older versions of Chrome and Safari which return 'function' for regexes

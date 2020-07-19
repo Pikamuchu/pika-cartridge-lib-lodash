@@ -1,9 +1,10 @@
 var baseToString = require('../internal/baseToString'),
     unescapeHtmlChar = require('../internal/unescapeHtmlChar');
-/** Used to match HTML entities and HTML characters. */
 
+/** Used to match HTML entities and HTML characters. */
 var reEscapedHtml = /&(?:amp|lt|gt|quot|#39|#96);/g,
     reHasEscapedHtml = RegExp(reEscapedHtml.source);
+
 /**
  * The inverse of `_.escape`; this method converts the HTML entities
  * `&amp;`, `&lt;`, `&gt;`, `&quot;`, `&#39;`, and `&#96;` in `string` to their
@@ -22,7 +23,6 @@ var reEscapedHtml = /&(?:amp|lt|gt|quot|#39|#96);/g,
  * _.unescape('fred, barney, &amp; pebbles');
  * // => 'fred, barney, & pebbles'
  */
-
 function unescape(string) {
     string = baseToString(string);
     return string && reHasEscapedHtml.test(string) ? string.replace(reEscapedHtml, unescapeHtmlChar) : string;

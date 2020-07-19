@@ -2,6 +2,7 @@ var mapDelete = require('./mapDelete'),
     mapGet = require('./mapGet'),
     mapHas = require('./mapHas'),
     mapSet = require('./mapSet');
+
 /**
  * Creates a cache object to store key/value pairs.
  *
@@ -10,7 +11,6 @@ var mapDelete = require('./mapDelete'),
  * @name Cache
  * @memberOf _.memoize
  */
-
 function MapCache() {
     this.__data__ = {};
 } // Add functions to the `Map` cache.

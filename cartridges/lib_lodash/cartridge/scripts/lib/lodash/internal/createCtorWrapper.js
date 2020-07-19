@@ -1,5 +1,6 @@
 var baseCreate = require('./baseCreate'),
     isObject = require('../lang/isObject');
+
 /**
  * Creates a function that produces an instance of `Ctor` regardless of
  * whether it was invoked as part of a `new` expression or by `call` or `apply`.
@@ -8,7 +9,6 @@ var baseCreate = require('./baseCreate'),
  * @param {Function} Ctor The constructor to wrap.
  * @returns {Function} Returns the new wrapped function.
  */
-
 function createCtorWrapper(Ctor) {
     return function() {
         // Use a `switch` statement to work with class constructors.

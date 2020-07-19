@@ -1,4 +1,5 @@
 var identity = require('../utility/identity');
+
 /**
  * A specialized version of `baseCallback` which only supports `this` binding
  * and specifying the number of arguments to provide to `func`.
@@ -9,7 +10,6 @@ var identity = require('../utility/identity');
  * @param {number} [argCount] The number of arguments to provide to `func`.
  * @returns {Function} Returns the callback.
  */
-
 function bindCallback(func, thisArg, argCount) {
     if (typeof func != 'function') {
         return identity;

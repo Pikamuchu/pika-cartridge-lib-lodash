@@ -1,5 +1,6 @@
 var baseClone = require('../internal/baseClone'),
     baseMatches = require('../internal/baseMatches');
+
 /**
  * Creates a function that performs a deep comparison between a given object
  * and `source`, returning `true` if the given object has equivalent property
@@ -25,7 +26,6 @@ var baseClone = require('../internal/baseClone'),
  * _.filter(users, _.matches({ 'age': 40, 'active': false }));
  * // => [{ 'user': 'fred', 'age': 40, 'active': false }]
  */
-
 function matches(source) {
     return baseMatches(baseClone(source, true));
 }

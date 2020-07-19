@@ -1,4 +1,5 @@
 var createSortedIndex = require('../internal/createSortedIndex');
+
 /**
  * Uses a binary search to determine the lowest index at which `value` should
  * be inserted into `array` in order to maintain its sort order. If an iteratee
@@ -47,6 +48,5 @@ var createSortedIndex = require('../internal/createSortedIndex');
  * _.sortedIndex([{ 'x': 30 }, { 'x': 50 }], { 'x': 40 }, 'x');
  * // => 1
  */
-
 var sortedIndex = createSortedIndex();
 module.exports = sortedIndex;

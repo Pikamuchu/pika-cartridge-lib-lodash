@@ -1,4 +1,5 @@
 var createPadDir = require('../internal/createPadDir');
+
 /**
  * Pads `string` on the left side if it's shorter than `length`. Padding
  * characters are truncated if they exceed `length`.
@@ -21,6 +22,5 @@ var createPadDir = require('../internal/createPadDir');
  * _.padLeft('abc', 3);
  * // => 'abc'
  */
-
 var padLeft = createPadDir();
 module.exports = padLeft;

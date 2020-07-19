@@ -6,6 +6,7 @@ var arrayMap = require('../internal/arrayMap'),
     pickByArray = require('../internal/pickByArray'),
     pickByCallback = require('../internal/pickByCallback'),
     restParam = require('../function/restParam');
+
 /**
  * The opposite of `_.pick`; this method creates an object composed of the
  * own and inherited enumerable properties of `object` that are not omitted.
@@ -29,7 +30,6 @@ var arrayMap = require('../internal/arrayMap'),
  * _.omit(object, _.isNumber);
  * // => { 'user': 'fred' }
  */
-
 var omit = restParam(function(object, props) {
     if (object == null) {
         return {};

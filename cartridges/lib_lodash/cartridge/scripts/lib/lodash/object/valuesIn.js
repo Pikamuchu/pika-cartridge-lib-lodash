@@ -1,5 +1,6 @@
 var baseValues = require('../internal/baseValues'),
     keysIn = require('./keysIn');
+
 /**
  * Creates an array of the own and inherited enumerable property values
  * of `object`.
@@ -23,7 +24,6 @@ var baseValues = require('../internal/baseValues'),
  * _.valuesIn(new Foo);
  * // => [1, 2, 3] (iteration order is not guaranteed)
  */
-
 function valuesIn(object) {
     return baseValues(object, keysIn(object));
 }

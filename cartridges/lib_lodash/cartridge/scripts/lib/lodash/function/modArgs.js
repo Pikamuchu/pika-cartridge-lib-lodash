@@ -2,12 +2,13 @@ var arrayEvery = require('../internal/arrayEvery'),
     baseFlatten = require('../internal/baseFlatten'),
     baseIsFunction = require('../internal/baseIsFunction'),
     restParam = require('./restParam');
+
 /** Used as the `TypeError` message for "Functions" methods. */
-
 var FUNC_ERROR_TEXT = 'Expected a function';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Creates a function that runs each argument through a corresponding
  * transform function.
@@ -39,7 +40,6 @@ var nativeMin = Math.min;
  * modded(5, 10);
  * // => [25, 20]
  */
-
 var modArgs = restParam(function(func, transforms) {
     transforms = baseFlatten(transforms);
 

@@ -1,4 +1,5 @@
 var isFunction = require('../lang/isFunction');
+
 /**
  * The base implementation of `_.functions` which creates an array of
  * `object` function property names filtered from those provided.
@@ -8,7 +9,6 @@ var isFunction = require('../lang/isFunction');
  * @param {Array} props The property names to filter.
  * @returns {Array} Returns the new array of filtered property names.
  */
-
 function baseFunctions(object, props) {
     var index = -1,
         length = props.length,

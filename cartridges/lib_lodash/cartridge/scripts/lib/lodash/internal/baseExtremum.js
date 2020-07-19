@@ -1,4 +1,5 @@
 var baseEach = require('./baseEach');
+
 /**
  * Gets the extremum value of `collection` invoking `iteratee` for each value
  * in `collection` to generate the criterion by which the value is ranked.
@@ -11,7 +12,6 @@ var baseEach = require('./baseEach');
  * @param {*} exValue The initial extremum value.
  * @returns {*} Returns the extremum value.
  */
-
 function baseExtremum(collection, iteratee, comparator, exValue) {
     var computed = exValue,
         result = computed;

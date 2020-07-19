@@ -1,8 +1,9 @@
 var isIterateeCall = require('../internal/isIterateeCall');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeCeil = Math.ceil,
     nativeMax = Math.max;
+
 /**
  * Creates an array of numbers (positive and/or negative) progressing from
  * `start` up to, but not including, `end`. If `end` is not specified it's
@@ -36,7 +37,6 @@ var nativeCeil = Math.ceil,
  * _.range(0);
  * // => []
  */
-
 function range(start, end, step) {
     if (step && isIterateeCall(start, end, step)) {
         end = step = undefined;

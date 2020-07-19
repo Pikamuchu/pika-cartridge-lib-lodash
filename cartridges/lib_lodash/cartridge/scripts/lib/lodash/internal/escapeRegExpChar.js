@@ -29,8 +29,8 @@ var regexpEscapes = {
     v: 'x76',
     x: 'x78'
 };
-/** Used to escape characters for inclusion in compiled string literals. */
 
+/** Used to escape characters for inclusion in compiled string literals. */
 var stringEscapes = {
     '\\': '\\',
     "'": "'",
@@ -39,6 +39,7 @@ var stringEscapes = {
     '\u2028': 'u2028',
     '\u2029': 'u2029'
 };
+
 /**
  * Used by `_.escapeRegExp` to escape characters for inclusion in compiled regexes.
  *
@@ -48,7 +49,6 @@ var stringEscapes = {
  * @param {string} whitespaceChar The capture group for a whitespace character.
  * @returns {string} Returns the escaped character.
  */
-
 function escapeRegExpChar(chr, leadingChar, whitespaceChar) {
     if (leadingChar) {
         chr = regexpEscapes[chr];

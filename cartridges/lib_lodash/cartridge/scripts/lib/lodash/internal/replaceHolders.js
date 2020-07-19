@@ -1,5 +1,6 @@
 /** Used as the internal argument placeholder. */
 var PLACEHOLDER = '__lodash_placeholder__';
+
 /**
  * Replaces all `placeholder` elements in `array` with an internal placeholder
  * and returns an array of their indexes.
@@ -9,7 +10,6 @@ var PLACEHOLDER = '__lodash_placeholder__';
  * @param {*} placeholder The placeholder to replace.
  * @returns {Array} Returns the new array of placeholder indexes.
  */
-
 function replaceHolders(array, placeholder) {
     var index = -1,
         length = array.length,

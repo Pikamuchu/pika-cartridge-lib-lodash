@@ -1,9 +1,10 @@
 var binaryIndexBy = require('./binaryIndexBy'),
     identity = require('../utility/identity');
-/** Used as references for the maximum length and index of an array. */
 
+/** Used as references for the maximum length and index of an array. */
 var MAX_ARRAY_LENGTH = 4294967295,
     HALF_MAX_ARRAY_LENGTH = MAX_ARRAY_LENGTH >>> 1;
+
 /**
  * Performs a binary search of `array` to determine the index at which `value`
  * should be inserted into `array` in order to maintain its sort order.
@@ -15,7 +16,6 @@ var MAX_ARRAY_LENGTH = 4294967295,
  * @returns {number} Returns the index at which `value` should be inserted
  *  into `array`.
  */
-
 function binaryIndex(array, value, retHighest) {
     var low = 0,
         high = array ? array.length : low;

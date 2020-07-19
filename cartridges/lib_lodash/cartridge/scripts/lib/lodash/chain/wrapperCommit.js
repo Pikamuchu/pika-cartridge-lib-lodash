@@ -1,4 +1,5 @@
 var LodashWrapper = require('../internal/LodashWrapper');
+
 /**
  * Executes the chained sequence and returns the wrapped result.
  *
@@ -24,7 +25,6 @@ var LodashWrapper = require('../internal/LodashWrapper');
  * console.log(array);
  * // => [1, 2, 3]
  */
-
 function wrapperCommit() {
     return new LodashWrapper(this.value(), this.__chain__);
 }

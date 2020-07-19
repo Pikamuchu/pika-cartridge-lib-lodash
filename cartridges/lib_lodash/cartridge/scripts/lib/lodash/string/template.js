@@ -10,20 +10,21 @@ var assignOwnDefaults = require('../internal/assignOwnDefaults'),
     keys = require('../object/keys'),
     reInterpolate = require('../internal/reInterpolate'),
     templateSettings = require('./templateSettings');
-/** Used to match empty string literals in compiled template source. */
 
+/** Used to match empty string literals in compiled template source. */
 var reEmptyStringLeading = /\b__p \+= '';/g,
     reEmptyStringMiddle = /\b(__p \+=) '' \+/g,
     reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
+
 /** Used to match [ES template delimiters](http://ecma-international.org/ecma-262/6.0/#sec-template-literal-lexical-components). */
-
 var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+
 /** Used to ensure capturing order of template delimiters. */
-
 var reNoMatch = /($^)/;
-/** Used to match unescaped characters in compiled string literals. */
 
+/** Used to match unescaped characters in compiled string literals. */
 var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
+
 /**
  * Creates a compiled template function that can interpolate data properties
  * in "interpolate" delimiters, HTML-escape interpolated data properties in
@@ -120,7 +121,6 @@ var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
  *   };\
  * ');
  */
-
 function template(string, options, otherOptions) {
     // Based on John Resig's `tmpl` implementation (http://ejohn.org/blog/javascript-micro-templating/)
     // and Laura Doktorova's doT.js (https://github.com/olado/doT).

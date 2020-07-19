@@ -1,5 +1,6 @@
 var baseMerge = require('../internal/baseMerge'),
     createAssigner = require('../internal/createAssigner');
+
 /**
  * Recursively merges own enumerable properties of the source object(s), that
  * don't resolve to `undefined` into the destination object. Subsequent sources
@@ -48,6 +49,5 @@ var baseMerge = require('../internal/baseMerge'),
  * });
  * // => { 'fruits': ['apple', 'banana'], 'vegetables': ['beet', 'carrot'] }
  */
-
 var merge = createAssigner(baseMerge);
 module.exports = merge;

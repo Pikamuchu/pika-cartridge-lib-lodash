@@ -5,9 +5,10 @@ var baseIndexOf = require('../internal/baseIndexOf'),
     isLength = require('../internal/isLength'),
     isString = require('../lang/isString'),
     values = require('../object/values');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Checks if `target` is in `collection` using
  * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -37,7 +38,6 @@ var nativeMax = Math.max;
  * _.includes('pebbles', 'eb');
  * // => true
  */
-
 function includes(collection, target, fromIndex, guard) {
     var length = collection ? getLength(collection) : 0;
 

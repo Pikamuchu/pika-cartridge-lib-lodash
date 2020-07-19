@@ -1,4 +1,5 @@
 var baseForIn = require('./baseForIn');
+
 /**
  * A specialized version of `_.pick` which picks `object` properties `predicate`
  * returns truthy for.
@@ -8,7 +9,6 @@ var baseForIn = require('./baseForIn');
  * @param {Function} predicate The function invoked per iteration.
  * @returns {Object} Returns the new object.
  */
-
 function pickByCallback(object, predicate) {
     var result = {};
     baseForIn(object, function(value, key, object) {

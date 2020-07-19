@@ -2,6 +2,7 @@ var baseCallback = require('../internal/baseCallback'),
     baseUniq = require('../internal/baseUniq'),
     isIterateeCall = require('../internal/isIterateeCall'),
     sortedUniq = require('../internal/sortedUniq');
+
 /**
  * Creates a duplicate-free version of an array, using
  * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -51,7 +52,6 @@ var baseCallback = require('../internal/baseCallback'),
  * _.uniq([{ 'x': 1 }, { 'x': 2 }, { 'x': 1 }], 'x');
  * // => [{ 'x': 1 }, { 'x': 2 }]
  */
-
 function uniq(array, isSorted, iteratee, thisArg) {
     var length = array ? array.length : 0;
 

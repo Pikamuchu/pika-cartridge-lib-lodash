@@ -1,5 +1,6 @@
 var baseEachRight = require('../internal/baseEachRight'),
     createFind = require('../internal/createFind');
+
 /**
  * This method is like `_.find` except that it iterates over elements of
  * `collection` from right to left.
@@ -19,6 +20,5 @@ var baseEachRight = require('../internal/baseEachRight'),
  * });
  * // => 3
  */
-
 var findLast = createFind(baseEachRight, true);
 module.exports = findLast;

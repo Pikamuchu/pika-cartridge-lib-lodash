@@ -1,5 +1,6 @@
 var LazyWrapper = require('./LazyWrapper'),
     arrayPush = require('./arrayPush');
+
 /**
  * The base implementation of `wrapperValue` which returns the result of
  * performing a sequence of actions on the unwrapped `value`, where each
@@ -10,7 +11,6 @@ var LazyWrapper = require('./LazyWrapper'),
  * @param {Array} actions Actions to peform to resolve the unwrapped value.
  * @returns {*} Returns the resolved value.
  */
-
 function baseWrapperValue(value, actions) {
     var result = value;
 

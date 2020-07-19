@@ -1,11 +1,12 @@
 var baseToString = require('./baseToString'),
     isArray = require('../lang/isArray');
+
 /** Used to match property names within property paths. */
-
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\n\\]|\\.)*?)\2)\]/g;
-/** Used to match backslashes in property paths. */
 
+/** Used to match backslashes in property paths. */
 var reEscapeChar = /\\(\\)?/g;
+
 /**
  * Converts `value` to property path array if it's not one.
  *
@@ -13,7 +14,6 @@ var reEscapeChar = /\\(\\)?/g;
  * @param {*} value The value to process.
  * @returns {Array} Returns the property path array.
  */
-
 function toPath(value) {
     if (isArray(value)) {
         return value;

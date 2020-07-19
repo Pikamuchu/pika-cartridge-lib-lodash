@@ -1,7 +1,8 @@
 var baseToString = require('../internal/baseToString');
-/** Used to generate unique IDs. */
 
+/** Used to generate unique IDs. */
 var idCounter = 0;
+
 /**
  * Generates a unique ID. If `prefix` is provided the ID is appended to it.
  *
@@ -18,7 +19,6 @@ var idCounter = 0;
  * _.uniqueId();
  * // => '105'
  */
-
 function uniqueId(prefix) {
     var id = ++idCounter;
     return baseToString(prefix) + id;

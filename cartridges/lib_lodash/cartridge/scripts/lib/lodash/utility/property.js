@@ -1,6 +1,7 @@
 var baseProperty = require('../internal/baseProperty'),
     basePropertyDeep = require('../internal/basePropertyDeep'),
     isKey = require('../internal/isKey');
+
 /**
  * Creates a function that returns the property value at `path` on a
  * given object.
@@ -23,7 +24,6 @@ var baseProperty = require('../internal/baseProperty'),
  * _.pluck(_.sortBy(objects, _.property(['a', 'b', 'c'])), 'a.b.c');
  * // => [1, 2]
  */
-
 function property(path) {
     return isKey(path) ? baseProperty(path) : basePropertyDeep(path);
 }

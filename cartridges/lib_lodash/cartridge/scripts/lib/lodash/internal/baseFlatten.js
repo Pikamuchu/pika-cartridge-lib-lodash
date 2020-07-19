@@ -3,6 +3,7 @@ var arrayPush = require('./arrayPush'),
     isArray = require('../lang/isArray'),
     isArrayLike = require('./isArrayLike'),
     isObjectLike = require('./isObjectLike');
+
 /**
  * The base implementation of `_.flatten` with added support for restricting
  * flattening and specifying the start index.
@@ -14,7 +15,6 @@ var arrayPush = require('./arrayPush'),
  * @param {Array} [result=[]] The initial result value.
  * @returns {Array} Returns the new flattened array.
  */
-
 function baseFlatten(array, isDeep, isStrict, result) {
     result || (result = []);
     var index = -1,

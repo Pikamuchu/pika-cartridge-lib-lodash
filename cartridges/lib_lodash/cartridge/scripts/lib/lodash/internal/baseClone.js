@@ -7,8 +7,8 @@ var arrayCopy = require('./arrayCopy'),
     initCloneObject = require('./initCloneObject'),
     isArray = require('../lang/isArray'),
     isObject = require('../lang/isObject');
-/** `Object#toString` result references. */
 
+/** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
     arrayTag = '[object Array]',
     boolTag = '[object Boolean]',
@@ -32,8 +32,8 @@ var arrayBufferTag = '[object ArrayBuffer]',
     uint8ClampedTag = '[object Uint8ClampedArray]',
     uint16Tag = '[object Uint16Array]',
     uint32Tag = '[object Uint32Array]';
-/** Used to identify `toStringTag` values supported by `_.clone`. */
 
+/** Used to identify `toStringTag` values supported by `_.clone`. */
 var cloneableTags = {};
 cloneableTags[argsTag] = cloneableTags[arrayTag] = cloneableTags[arrayBufferTag] = cloneableTags[
     boolTag
@@ -47,15 +47,16 @@ cloneableTags[argsTag] = cloneableTags[arrayTag] = cloneableTags[arrayBufferTag]
 cloneableTags[errorTag] = cloneableTags[funcTag] = cloneableTags[mapTag] = cloneableTags[setTag] = cloneableTags[
     weakMapTag
 ] = false;
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * The base implementation of `_.clone` without support for argument juggling
  * and `this` binding `customizer` functions.
@@ -70,7 +71,6 @@ var objToString = objectProto.toString;
  * @param {Array} [stackB=[]] Associates clones with source counterparts.
  * @returns {*} Returns the cloned value.
  */
-
 function baseClone(value, isDeep, customizer, key, object, stackA, stackB) {
     var result;
 

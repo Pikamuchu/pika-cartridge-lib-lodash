@@ -1,4 +1,5 @@
 var isNative = require('../lang/isNative');
+
 /**
  * Gets the native function at `key` of `object`.
  *
@@ -7,7 +8,6 @@ var isNative = require('../lang/isNative');
  * @param {string} key The key of the method to get.
  * @returns {*} Returns the function if it's native, else `undefined`.
  */
-
 function getNative(object, key) {
     var value = object == null ? undefined : object[key];
     return isNative(value) ? value : undefined;

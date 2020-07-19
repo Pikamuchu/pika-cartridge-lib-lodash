@@ -1,4 +1,5 @@
 var lodash = require('./lodash');
+
 /**
  * Creates a `lodash` object that wraps `value` with explicit method
  * chaining enabled.
@@ -25,7 +26,6 @@ var lodash = require('./lodash');
  *   .value();
  * // => 'pebbles is 1'
  */
-
 function chain(value) {
     var result = lodash(value);
     result.__chain__ = true;

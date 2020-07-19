@@ -1,5 +1,6 @@
 var baseSlice = require('../internal/baseSlice'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Creates a slice of `array` with `n` elements dropped from the beginning.
  *
@@ -24,7 +25,6 @@ var baseSlice = require('../internal/baseSlice'),
  * _.drop([1, 2, 3], 0);
  * // => [1, 2, 3]
  */
-
 function drop(array, n, guard) {
     var length = array ? array.length : 0;
 

@@ -1,4 +1,5 @@
 var isObject = require('../lang/isObject');
+
 /**
  * The base implementation of `_.create` without support for assigning
  * properties to the created object.
@@ -7,7 +8,6 @@ var isObject = require('../lang/isObject');
  * @param {Object} prototype The object to inherit from.
  * @returns {Object} Returns the new object.
  */
-
 var baseCreate = (function() {
     function object() {}
 

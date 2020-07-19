@@ -1,4 +1,5 @@
 var createFindIndex = require('../internal/createFindIndex');
+
 /**
  * This method is like `_.findIndex` except that it iterates over elements
  * of `collection` from right to left.
@@ -47,6 +48,5 @@ var createFindIndex = require('../internal/createFindIndex');
  * _.findLastIndex(users, 'active');
  * // => 0
  */
-
 var findLastIndex = createFindIndex(true);
 module.exports = findLastIndex;

@@ -1,6 +1,7 @@
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max,
     nativeMin = Math.min;
+
 /**
  * Gets the view, applying any `transforms` to the `start` and `end` positions.
  *
@@ -11,7 +12,6 @@ var nativeMax = Math.max,
  * @returns {Object} Returns an object containing the `start` and `end`
  *  positions of the view.
  */
-
 function getView(start, end, transforms) {
     var index = -1,
         length = transforms.length;

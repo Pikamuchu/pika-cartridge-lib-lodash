@@ -1,5 +1,6 @@
 var baseFor = require('../internal/baseFor'),
     createForIn = require('../internal/createForIn');
+
 /**
  * Iterates over own and inherited enumerable properties of an object invoking
  * `iteratee` for each property. The `iteratee` is bound to `thisArg` and invoked
@@ -27,6 +28,5 @@ var baseFor = require('../internal/baseFor'),
  * });
  * // => logs 'a', 'b', and 'c' (iteration order is not guaranteed)
  */
-
 var forIn = createForIn(baseFor);
 module.exports = forIn;

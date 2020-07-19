@@ -1,4 +1,5 @@
 var isNumber = require('./isNumber');
+
 /**
  * Checks if `value` is `NaN`.
  *
@@ -24,7 +25,6 @@ var isNumber = require('./isNumber');
  * _.isNaN(undefined);
  * // => false
  */
-
 function isNaN(value) {
     // An `NaN` primitive is the only value that is not equal to itself.
     // Perform the `toStringTag` check first to avoid errors with some host objects in IE.

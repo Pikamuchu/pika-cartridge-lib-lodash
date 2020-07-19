@@ -1,6 +1,7 @@
 var baseDifference = require('../internal/baseDifference'),
     isArrayLike = require('../internal/isArrayLike'),
     restParam = require('../function/restParam');
+
 /**
  * Creates an array excluding all provided values using
  * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -17,7 +18,6 @@ var baseDifference = require('../internal/baseDifference'),
  * _.without([1, 2, 1, 3], 1, 2);
  * // => [3]
  */
-
 var without = restParam(function(array, values) {
     return isArrayLike(array) ? baseDifference(array, values) : [];
 });

@@ -4,12 +4,13 @@ var LazyWrapper = require('../internal/LazyWrapper'),
     isArray = require('../lang/isArray'),
     isObjectLike = require('../internal/isObjectLike'),
     wrapperClone = require('../internal/wrapperClone');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Creates a `lodash` object which wraps `value` to enable implicit chaining.
  * Methods that operate on and return arrays, collections, and functions can
@@ -106,7 +107,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * _.isArray(squares.value());
  * // => true
  */
-
 function lodash(value) {
     if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
         if (value instanceof LodashWrapper) {

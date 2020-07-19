@@ -1,4 +1,5 @@
 var toObject = require('./toObject');
+
 /**
  * The base implementation of `get` without support for string paths
  * and default values.
@@ -9,7 +10,6 @@ var toObject = require('./toObject');
  * @param {string} [pathKey] The key representation of path.
  * @returns {*} Returns the resolved value.
  */
-
 function baseGet(object, path, pathKey) {
     if (object == null) {
         return;

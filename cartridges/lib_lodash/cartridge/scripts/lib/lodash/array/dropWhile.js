@@ -1,5 +1,6 @@
 var baseCallback = require('../internal/baseCallback'),
     baseWhile = require('../internal/baseWhile');
+
 /**
  * Creates a slice of `array` excluding elements dropped from the beginning.
  * Elements are dropped until `predicate` returns falsey. The predicate is
@@ -49,7 +50,6 @@ var baseCallback = require('../internal/baseCallback'),
  * _.pluck(_.dropWhile(users, 'active'), 'user');
  * // => ['barney', 'fred', 'pebbles']
  */
-
 function dropWhile(array, predicate, thisArg) {
     return array && array.length ? baseWhile(array, baseCallback(predicate, thisArg, 3), true) : [];
 }

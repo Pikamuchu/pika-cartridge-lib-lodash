@@ -1,10 +1,11 @@
 var baseIndexOf = require('../internal/baseIndexOf');
+
 /** Used for native method references. */
-
 var arrayProto = Array.prototype;
-/** Native method references. */
 
+/** Native method references. */
 var splice = arrayProto.splice;
+
 /**
  * Removes all provided values from `array` using
  * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -26,7 +27,6 @@ var splice = arrayProto.splice;
  * console.log(array);
  * // => [1, 1]
  */
-
 function pull() {
     var args = arguments,
         array = args[0];

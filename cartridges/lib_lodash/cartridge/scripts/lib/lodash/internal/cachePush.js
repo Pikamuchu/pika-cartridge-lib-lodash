@@ -1,4 +1,5 @@
 var isObject = require('../lang/isObject');
+
 /**
  * Adds `value` to the cache.
  *
@@ -7,7 +8,6 @@ var isObject = require('../lang/isObject');
  * @memberOf SetCache
  * @param {*} value The value to cache.
  */
-
 function cachePush(value) {
     var data = this.data;
 

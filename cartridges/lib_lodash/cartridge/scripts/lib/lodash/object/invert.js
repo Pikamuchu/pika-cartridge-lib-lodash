@@ -1,11 +1,12 @@
 var isIterateeCall = require('../internal/isIterateeCall'),
     keys = require('./keys');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Creates an object composed of the inverted keys and values of `object`.
  * If `object` contains duplicate values, subsequent values overwrite property
@@ -29,7 +30,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * _.invert(object, true);
  * // => { '1': ['a', 'c'], '2': ['b'] }
  */
-
 function invert(object, multiValue, guard) {
     if (guard && isIterateeCall(object, multiValue, guard)) {
         multiValue = undefined;

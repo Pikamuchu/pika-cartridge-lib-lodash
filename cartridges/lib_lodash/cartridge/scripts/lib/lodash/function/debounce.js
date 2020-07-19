@@ -1,11 +1,12 @@
 var isObject = require('../lang/isObject'),
     now = require('../date/now');
+
 /** Used as the `TypeError` message for "Functions" methods. */
-
 var FUNC_ERROR_TEXT = 'Expected a function';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Creates a debounced function that delays invoking `func` until after `wait`
  * milliseconds have elapsed since the last time the debounced function was
@@ -69,7 +70,6 @@ var nativeMax = Math.max;
  * // which cancels the debounced `todoChanges` call
  * delete models.todo;
  */
-
 function debounce(func, wait, options) {
     var args,
         maxTimeoutId,

@@ -7,6 +7,7 @@ var baseGet = require('./baseGet'),
     last = require('../array/last'),
     toObject = require('./toObject'),
     toPath = require('./toPath');
+
 /**
  * The base implementation of `_.matchesProperty` which does not clone `srcValue`.
  *
@@ -15,7 +16,6 @@ var baseGet = require('./baseGet'),
  * @param {*} srcValue The value to compare.
  * @returns {Function} Returns the new function.
  */
-
 function baseMatchesProperty(path, srcValue) {
     var isArr = isArray(path),
         isCommon = isKey(path) && isStrictComparable(srcValue),

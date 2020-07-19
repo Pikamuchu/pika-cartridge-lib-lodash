@@ -2,9 +2,10 @@ var arrayFilter = require('../internal/arrayFilter'),
     arrayMap = require('../internal/arrayMap'),
     baseProperty = require('../internal/baseProperty'),
     isArrayLike = require('../internal/isArrayLike');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * This method is like `_.zip` except that it accepts an array of grouped
  * elements and creates an array regrouping the elements to their pre-zip
@@ -23,7 +24,6 @@ var nativeMax = Math.max;
  * _.unzip(zipped);
  * // => [['fred', 'barney'], [30, 40], [true, false]]
  */
-
 function unzip(array) {
     if (!(array && array.length)) {
         return [];

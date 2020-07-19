@@ -1,4 +1,5 @@
 var toObject = require('./toObject');
+
 /**
  * A specialized version of `_.pick` which picks `object` properties specified
  * by `props`.
@@ -8,7 +9,6 @@ var toObject = require('./toObject');
  * @param {string[]} props The property names to pick.
  * @returns {Object} Returns the new object.
  */
-
 function pickByArray(object, props) {
     object = toObject(object);
     var index = -1,

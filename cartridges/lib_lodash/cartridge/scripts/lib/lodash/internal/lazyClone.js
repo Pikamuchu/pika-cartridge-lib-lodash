@@ -1,5 +1,6 @@
 var LazyWrapper = require('./LazyWrapper'),
     arrayCopy = require('./arrayCopy');
+
 /**
  * Creates a clone of the lazy wrapper object.
  *
@@ -8,7 +9,6 @@ var LazyWrapper = require('./LazyWrapper'),
  * @memberOf LazyWrapper
  * @returns {Object} Returns the cloned `LazyWrapper` object.
  */
-
 function lazyClone() {
     var result = new LazyWrapper(this.__wrapped__);
     result.__actions__ = arrayCopy(this.__actions__);

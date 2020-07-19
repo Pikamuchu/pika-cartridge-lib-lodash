@@ -1,5 +1,6 @@
 var baseEach = require('./baseEach'),
     isArrayLike = require('./isArrayLike');
+
 /**
  * The base implementation of `_.map` without support for callback shorthands
  * and `this` binding.
@@ -9,7 +10,6 @@ var baseEach = require('./baseEach'),
  * @param {Function} iteratee The function invoked per iteration.
  * @returns {Array} Returns the new mapped array.
  */
-
 function baseMap(collection, iteratee) {
     var index = -1,
         result = isArrayLike(collection) ? Array(collection.length) : [];

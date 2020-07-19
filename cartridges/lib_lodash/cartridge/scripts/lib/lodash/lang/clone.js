@@ -1,6 +1,7 @@
 var baseClone = require('../internal/baseClone'),
     bindCallback = require('../internal/bindCallback'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Creates a clone of `value`. If `isDeep` is `true` nested objects are cloned,
  * otherwise they are assigned by reference. If `customizer` is provided it's
@@ -52,7 +53,6 @@ var baseClone = require('../internal/baseClone'),
  * el.childNodes.length;
  * // => 0
  */
-
 function clone(value, isDeep, customizer, thisArg) {
     if (isDeep && typeof isDeep != 'boolean' && isIterateeCall(value, isDeep, customizer)) {
         isDeep = false;

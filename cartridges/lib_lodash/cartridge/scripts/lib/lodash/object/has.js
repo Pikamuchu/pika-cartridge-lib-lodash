@@ -7,12 +7,13 @@ var baseGet = require('../internal/baseGet'),
     isLength = require('../internal/isLength'),
     last = require('../array/last'),
     toPath = require('../internal/toPath');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Checks if `path` is a direct property.
  *
@@ -35,7 +36,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * _.has(object, ['a', 'b', 'c']);
  * // => true
  */
-
 function has(object, path) {
     if (object == null) {
         return false;

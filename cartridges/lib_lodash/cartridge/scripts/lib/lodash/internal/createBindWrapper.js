@@ -1,5 +1,6 @@
-var global = Function('return this')();
+var global = require('./global');
 var createCtorWrapper = require('./createCtorWrapper');
+
 /**
  * Creates a function that wraps `func` and invokes it with the `this`
  * binding of `thisArg`.
@@ -9,7 +10,6 @@ var createCtorWrapper = require('./createCtorWrapper');
  * @param {*} [thisArg] The `this` binding of `func`.
  * @returns {Function} Returns the new bound function.
  */
-
 function createBindWrapper(func, thisArg) {
     var Ctor = createCtorWrapper(func);
 

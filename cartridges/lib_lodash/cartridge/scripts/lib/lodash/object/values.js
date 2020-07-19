@@ -1,5 +1,6 @@
 var baseValues = require('../internal/baseValues'),
     keys = require('./keys');
+
 /**
  * Creates an array of the own enumerable property values of `object`.
  *
@@ -25,7 +26,6 @@ var baseValues = require('../internal/baseValues'),
  * _.values('hi');
  * // => ['h', 'i']
  */
-
 function values(object) {
     return baseValues(object, keys(object));
 }

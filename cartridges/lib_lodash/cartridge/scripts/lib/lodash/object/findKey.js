@@ -1,5 +1,6 @@
 var baseForOwn = require('../internal/baseForOwn'),
     createFindKey = require('../internal/createFindKey');
+
 /**
  * This method is like `_.find` except that it returns the key of the first
  * element `predicate` returns truthy for instead of the element itself.
@@ -48,6 +49,5 @@ var baseForOwn = require('../internal/baseForOwn'),
  * _.findKey(users, 'active');
  * // => 'barney'
  */
-
 var findKey = createFindKey(baseForOwn);
 module.exports = findKey;

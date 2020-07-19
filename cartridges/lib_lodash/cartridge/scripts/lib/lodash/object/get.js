@@ -1,5 +1,6 @@
 var baseGet = require('../internal/baseGet'),
     toPath = require('../internal/toPath');
+
 /**
  * Gets the property value at `path` of `object`. If the resolved value is
  * `undefined` the `defaultValue` is used in its place.
@@ -24,7 +25,6 @@ var baseGet = require('../internal/baseGet'),
  * _.get(object, 'a.b.c', 'default');
  * // => 'default'
  */
-
 function get(object, path, defaultValue) {
     var result = object == null ? undefined : baseGet(object, toPath(path), path + '');
     return result === undefined ? defaultValue : result;

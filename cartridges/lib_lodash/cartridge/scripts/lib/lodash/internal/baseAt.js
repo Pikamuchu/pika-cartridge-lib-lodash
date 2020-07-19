@@ -1,5 +1,6 @@
 var isArrayLike = require('./isArrayLike'),
     isIndex = require('./isIndex');
+
 /**
  * The base implementation of `_.at` without support for string collections
  * and individual key arguments.
@@ -9,7 +10,6 @@ var isArrayLike = require('./isArrayLike'),
  * @param {number[]|string[]} props The property names or indexes of elements to pick.
  * @returns {Array} Returns the new array of picked elements.
  */
-
 function baseAt(collection, props) {
     var index = -1,
         isNil = collection == null,

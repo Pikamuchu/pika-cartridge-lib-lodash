@@ -1,5 +1,6 @@
 var baseForRight = require('../internal/baseForRight'),
     createForIn = require('../internal/createForIn');
+
 /**
  * This method is like `_.forIn` except that it iterates over properties of
  * `object` in the opposite order.
@@ -25,6 +26,5 @@ var baseForRight = require('../internal/baseForRight'),
  * });
  * // => logs 'c', 'b', and 'a' assuming `_.forIn ` logs 'a', 'b', and 'c'
  */
-
 var forInRight = createForIn(baseForRight);
 module.exports = forInRight;

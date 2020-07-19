@@ -1,15 +1,15 @@
 var baseCreate = require('./baseCreate'),
     baseLodash = require('./baseLodash');
-/** Used as references for `-Infinity` and `Infinity`. */
 
+/** Used as references for `-Infinity` and `Infinity`. */
 var POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
+
 /**
  * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
  *
  * @private
  * @param {*} value The value to wrap.
  */
-
 function LazyWrapper(value) {
     this.__wrapped__ = value;
     this.__actions__ = [];

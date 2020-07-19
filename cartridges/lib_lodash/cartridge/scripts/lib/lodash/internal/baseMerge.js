@@ -6,6 +6,7 @@ var arrayEach = require('./arrayEach'),
     isObjectLike = require('./isObjectLike'),
     isTypedArray = require('../lang/isTypedArray'),
     keys = require('../object/keys');
+
 /**
  * The base implementation of `_.merge` without support for argument juggling,
  * multiple sources, and `this` binding `customizer` functions.
@@ -18,7 +19,6 @@ var arrayEach = require('./arrayEach'),
  * @param {Array} [stackB=[]] Associates values with source counterparts.
  * @returns {Object} Returns `object`.
  */
-
 function baseMerge(object, source, customizer, stackA, stackB) {
     if (!isObject(object)) {
         return object;

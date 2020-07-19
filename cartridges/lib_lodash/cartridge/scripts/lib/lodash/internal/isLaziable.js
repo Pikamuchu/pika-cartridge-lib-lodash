@@ -2,6 +2,7 @@ var LazyWrapper = require('./LazyWrapper'),
     getData = require('./getData'),
     getFuncName = require('./getFuncName'),
     lodash = require('../chain/lodash');
+
 /**
  * Checks if `func` has a lazy counterpart.
  *
@@ -9,7 +10,6 @@ var LazyWrapper = require('./LazyWrapper'),
  * @param {Function} func The function to check.
  * @returns {boolean} Returns `true` if `func` has a lazy counterpart, else `false`.
  */
-
 function isLaziable(func) {
     var funcName = getFuncName(func),
         other = lodash[funcName];

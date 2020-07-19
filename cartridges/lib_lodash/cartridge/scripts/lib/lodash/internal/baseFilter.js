@@ -1,4 +1,5 @@
 var baseEach = require('./baseEach');
+
 /**
  * The base implementation of `_.filter` without support for callback
  * shorthands and `this` binding.
@@ -8,7 +9,6 @@ var baseEach = require('./baseEach');
  * @param {Function} predicate The function invoked per iteration.
  * @returns {Array} Returns the new filtered array.
  */
-
 function baseFilter(collection, predicate) {
     var result = [];
     baseEach(collection, function(value, index, collection) {

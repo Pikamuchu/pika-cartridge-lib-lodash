@@ -1,10 +1,11 @@
 var isIndex = require('./isIndex');
+
 /** Used for native method references. */
-
 var arrayProto = Array.prototype;
-/** Native method references. */
 
+/** Native method references. */
 var splice = arrayProto.splice;
+
 /**
  * The base implementation of `_.pullAt` without support for individual
  * index arguments and capturing the removed elements.
@@ -14,7 +15,6 @@ var splice = arrayProto.splice;
  * @param {number[]} indexes The indexes of elements to remove.
  * @returns {Array} Returns `array`.
  */
-
 function basePullAt(array, indexes) {
     var length = array ? indexes.length : 0;
 

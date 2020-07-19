@@ -1,7 +1,8 @@
 var baseToString = require('../internal/baseToString');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Checks if `string` starts with the given target string.
  *
@@ -23,7 +24,6 @@ var nativeMin = Math.min;
  * _.startsWith('abc', 'b', 1);
  * // => true
  */
-
 function startsWith(string, target, position) {
     string = baseToString(string);
     position = position == null ? 0 : nativeMin(position < 0 ? 0 : +position || 0, string.length);

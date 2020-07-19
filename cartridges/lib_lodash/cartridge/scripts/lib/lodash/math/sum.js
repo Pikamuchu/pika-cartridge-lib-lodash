@@ -4,6 +4,7 @@ var arraySum = require('../internal/arraySum'),
     isArray = require('../lang/isArray'),
     isIterateeCall = require('../internal/isIterateeCall'),
     toIterable = require('../internal/toIterable');
+
 /**
  * Gets the sum of the values in `collection`.
  *
@@ -36,7 +37,6 @@ var arraySum = require('../internal/arraySum'),
  * _.sum(objects, 'n');
  * // => 10
  */
-
 function sum(collection, iteratee, thisArg) {
     if (thisArg && isIterateeCall(collection, iteratee, thisArg)) {
         iteratee = undefined;

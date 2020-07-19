@@ -1,5 +1,6 @@
 /** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
+
 /**
  * Creates a function that invokes `func`, with the `this` binding and arguments
  * of the created function, while it's called less than `n` times. Subsequent
@@ -16,7 +17,6 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  * jQuery('#add').on('click', _.before(5, addContactToList));
  * // => allows adding up to 4 contacts to the list
  */
-
 function before(n, func) {
     var result;
 

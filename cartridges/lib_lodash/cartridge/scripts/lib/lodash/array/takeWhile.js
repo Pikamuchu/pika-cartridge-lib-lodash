@@ -1,5 +1,6 @@
 var baseCallback = require('../internal/baseCallback'),
     baseWhile = require('../internal/baseWhile');
+
 /**
  * Creates a slice of `array` with elements taken from the beginning. Elements
  * are taken until `predicate` returns falsey. The predicate is bound to
@@ -49,7 +50,6 @@ var baseCallback = require('../internal/baseCallback'),
  * _.pluck(_.takeWhile(users, 'active'), 'user');
  * // => []
  */
-
 function takeWhile(array, predicate, thisArg) {
     return array && array.length ? baseWhile(array, baseCallback(predicate, thisArg, 3)) : [];
 }

@@ -1,4 +1,5 @@
 var createFlow = require('../internal/createFlow');
+
 /**
  * Creates a function that returns the result of invoking the provided
  * functions with the `this` binding of the created function, where each
@@ -19,6 +20,5 @@ var createFlow = require('../internal/createFlow');
  * addSquare(1, 2);
  * // => 9
  */
-
 var flow = createFlow();
 module.exports = flow;

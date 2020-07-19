@@ -1,7 +1,8 @@
 var createCurry = require('../internal/createCurry');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var CURRY_FLAG = 8;
+
 /**
  * Creates a function that accepts one or more arguments of `func` that when
  * called either invokes `func` returning its result, if all `func` arguments
@@ -42,7 +43,6 @@ var CURRY_FLAG = 8;
  * curried(1)(_, 3)(2);
  * // => [1, 2, 3]
  */
-
 var curry = createCurry(CURRY_FLAG); // Assign default placeholders.
 
 curry.placeholder = {};

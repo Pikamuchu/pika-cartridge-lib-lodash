@@ -1,4 +1,5 @@
 var dropRight = require('./dropRight');
+
 /**
  * Gets all but the last element of `array`.
  *
@@ -12,7 +13,6 @@ var dropRight = require('./dropRight');
  * _.initial([1, 2, 3]);
  * // => [1, 2]
  */
-
 function initial(array) {
     return dropRight(array, 1);
 }

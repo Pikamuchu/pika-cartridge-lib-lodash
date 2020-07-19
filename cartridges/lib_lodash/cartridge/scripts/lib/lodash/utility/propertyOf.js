@@ -1,5 +1,6 @@
 var baseGet = require('../internal/baseGet'),
     toPath = require('../internal/toPath');
+
 /**
  * The opposite of `_.property`; this method creates a function that returns
  * the property value at a given path on `object`.
@@ -20,7 +21,6 @@ var baseGet = require('../internal/baseGet'),
  * _.map([['a', '2'], ['c', '0']], _.propertyOf(object));
  * // => [2, 0]
  */
-
 function propertyOf(object) {
     return function(path) {
         return baseGet(object, toPath(path), path + '');

@@ -1,5 +1,6 @@
 /** Native method references. */
 var pow = Math.pow;
+
 /**
  * Creates a `_.ceil`, `_.floor`, or `_.round` function.
  *
@@ -7,7 +8,6 @@ var pow = Math.pow;
  * @param {string} methodName The name of the `Math` method to use when rounding.
  * @returns {Function} Returns the new round function.
  */
-
 function createRound(methodName) {
     var func = Math[methodName];
     return function(number, precision) {

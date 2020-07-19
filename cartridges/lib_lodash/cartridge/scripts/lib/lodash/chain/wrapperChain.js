@@ -1,4 +1,5 @@
 var chain = require('./chain');
+
 /**
  * Enables explicit method chaining on the wrapper object.
  *
@@ -24,7 +25,6 @@ var chain = require('./chain');
  *   .value();
  * // => { 'user': 'barney' }
  */
-
 function wrapperChain() {
     return chain(this);
 }

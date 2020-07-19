@@ -5,6 +5,7 @@ var arrayCopy = require('./arrayCopy'),
     isPlainObject = require('../lang/isPlainObject'),
     isTypedArray = require('../lang/isTypedArray'),
     toPlainObject = require('../lang/toPlainObject');
+
 /**
  * A specialized version of `baseMerge` for arrays and objects which performs
  * deep merges and tracks traversed objects enabling objects with circular
@@ -20,7 +21,6 @@ var arrayCopy = require('./arrayCopy'),
  * @param {Array} [stackB=[]] Associates values with source counterparts.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
  */
-
 function baseMergeDeep(object, source, key, mergeFunc, customizer, stackA, stackB) {
     var length = stackA.length,
         srcValue = source[key];

@@ -1,5 +1,6 @@
 var baseMatches = require('../internal/baseMatches'),
     find = require('./find');
+
 /**
  * Performs a deep comparison between each element in `collection` and the
  * source object, returning the first element that has equivalent property
@@ -29,7 +30,6 @@ var baseMatches = require('../internal/baseMatches'),
  * _.result(_.findWhere(users, { 'age': 40, 'active': false }), 'user');
  * // => 'fred'
  */
-
 function findWhere(collection, source) {
     return find(collection, baseMatches(source));
 }

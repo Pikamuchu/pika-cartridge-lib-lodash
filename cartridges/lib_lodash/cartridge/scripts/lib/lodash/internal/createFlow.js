@@ -3,18 +3,19 @@ var LodashWrapper = require('./LodashWrapper'),
     getFuncName = require('./getFuncName'),
     isArray = require('../lang/isArray'),
     isLaziable = require('./isLaziable');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var CURRY_FLAG = 8,
     PARTIAL_FLAG = 32,
     ARY_FLAG = 128,
     REARG_FLAG = 256;
+
 /** Used as the size to enable large array optimizations. */
-
 var LARGE_ARRAY_SIZE = 200;
-/** Used as the `TypeError` message for "Functions" methods. */
 
+/** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
+
 /**
  * Creates a `_.flow` or `_.flowRight` function.
  *
@@ -22,7 +23,6 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new flow function.
  */
-
 function createFlow(fromRight) {
     return function() {
         var wrapper,

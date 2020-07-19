@@ -1,5 +1,6 @@
 var bindCallback = require('./bindCallback'),
     isArray = require('../lang/isArray');
+
 /**
  * Creates a function for `_.forEach` or `_.forEachRight`.
  *
@@ -8,7 +9,6 @@ var bindCallback = require('./bindCallback'),
  * @param {Function} eachFunc The function to iterate over a collection.
  * @returns {Function} Returns the new each function.
  */
-
 function createForEach(arrayFunc, eachFunc) {
     return function(collection, iteratee, thisArg) {
         return typeof iteratee == 'function' && thisArg === undefined && isArray(collection)

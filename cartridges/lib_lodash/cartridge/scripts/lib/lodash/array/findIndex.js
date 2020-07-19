@@ -1,4 +1,5 @@
 var createFindIndex = require('../internal/createFindIndex');
+
 /**
  * This method is like `_.find` except that it returns the index of the first
  * element `predicate` returns truthy for instead of the element itself.
@@ -47,6 +48,5 @@ var createFindIndex = require('../internal/createFindIndex');
  * _.findIndex(users, 'active');
  * // => 2
  */
-
 var findIndex = createFindIndex();
 module.exports = findIndex;

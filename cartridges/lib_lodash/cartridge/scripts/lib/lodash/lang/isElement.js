@@ -1,5 +1,6 @@
 var isObjectLike = require('../internal/isObjectLike'),
     isPlainObject = require('./isPlainObject');
+
 /**
  * Checks if `value` is a DOM element.
  *
@@ -16,7 +17,6 @@ var isObjectLike = require('../internal/isObjectLike'),
  * _.isElement('<body>');
  * // => false
  */
-
 function isElement(value) {
     return !!value && value.nodeType === 1 && isObjectLike(value) && !isPlainObject(value);
 }

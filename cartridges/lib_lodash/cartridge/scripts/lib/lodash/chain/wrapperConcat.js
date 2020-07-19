@@ -3,6 +3,7 @@ var arrayConcat = require('../internal/arrayConcat'),
     isArray = require('../lang/isArray'),
     restParam = require('../function/restParam'),
     toObject = require('../internal/toObject');
+
 /**
  * Creates a new array joining a wrapped array with any additional arrays
  * and/or values.
@@ -23,7 +24,6 @@ var arrayConcat = require('../internal/arrayConcat'),
  * console.log(array);
  * // => [1]
  */
-
 var wrapperConcat = restParam(function(values) {
     values = baseFlatten(values);
     return this.thru(function(array) {

@@ -1,5 +1,6 @@
 var baseSlice = require('../internal/baseSlice'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Creates a slice of `array` with `n` elements taken from the end.
  *
@@ -24,7 +25,6 @@ var baseSlice = require('../internal/baseSlice'),
  * _.takeRight([1, 2, 3], 0);
  * // => []
  */
-
 function takeRight(array, n, guard) {
     var length = array ? array.length : 0;
 

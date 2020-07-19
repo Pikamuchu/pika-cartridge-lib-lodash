@@ -2,6 +2,7 @@ var baseCallback = require('./baseCallback'),
     baseFind = require('./baseFind'),
     baseFindIndex = require('./baseFindIndex'),
     isArray = require('../lang/isArray');
+
 /**
  * Creates a `_.find` or `_.findLast` function.
  *
@@ -10,7 +11,6 @@ var baseCallback = require('./baseCallback'),
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new find function.
  */
-
 function createFind(eachFunc, fromRight) {
     return function(collection, predicate, thisArg) {
         predicate = baseCallback(predicate, thisArg, 3);

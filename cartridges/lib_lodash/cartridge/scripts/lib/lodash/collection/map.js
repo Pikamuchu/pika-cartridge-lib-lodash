@@ -2,6 +2,7 @@ var arrayMap = require('../internal/arrayMap'),
     baseCallback = require('../internal/baseCallback'),
     baseMap = require('../internal/baseMap'),
     isArray = require('../lang/isArray');
+
 /**
  * Creates an array of values by running each element in `collection` through
  * `iteratee`. The `iteratee` is bound to `thisArg` and invoked with three
@@ -58,7 +59,6 @@ var arrayMap = require('../internal/arrayMap'),
  * _.map(users, 'user');
  * // => ['barney', 'fred']
  */
-
 function map(collection, iteratee, thisArg) {
     var func = isArray(collection) ? arrayMap : baseMap;
     iteratee = baseCallback(iteratee, thisArg, 3);

@@ -1,5 +1,6 @@
 var isError = require('../lang/isError'),
     restParam = require('../function/restParam');
+
 /**
  * Attempts to invoke `func`, returning either the result or the caught error
  * object. Any additional arguments are provided to `func` when it's invoked.
@@ -20,7 +21,6 @@ var isError = require('../lang/isError'),
  *   elements = [];
  * }
  */
-
 var attempt = restParam(function(func, args) {
     try {
         return func.apply(undefined, args);

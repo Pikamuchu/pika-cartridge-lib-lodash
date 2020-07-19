@@ -1,4 +1,5 @@
 var restParam = require('../function/restParam');
+
 /**
  * Creates a `_.defaults` or `_.defaultsDeep` function.
  *
@@ -7,7 +8,6 @@ var restParam = require('../function/restParam');
  * @param {Function} customizer The function to customize assigned values.
  * @returns {Function} Returns the new defaults function.
  */
-
 function createDefaults(assigner, customizer) {
     return restParam(function(args) {
         var object = args[0];

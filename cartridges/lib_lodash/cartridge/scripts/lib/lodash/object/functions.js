@@ -1,5 +1,6 @@
 var baseFunctions = require('../internal/baseFunctions'),
     keysIn = require('./keysIn');
+
 /**
  * Creates an array of function property names from all enumerable properties,
  * own and inherited, of `object`.
@@ -15,7 +16,6 @@ var baseFunctions = require('../internal/baseFunctions'),
  * _.functions(_);
  * // => ['after', 'ary', 'assign', ...]
  */
-
 function functions(object) {
     return baseFunctions(object, keysIn(object));
 }

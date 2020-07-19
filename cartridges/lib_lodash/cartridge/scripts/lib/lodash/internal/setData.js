@@ -1,9 +1,10 @@
 var baseSetData = require('./baseSetData'),
     now = require('../date/now');
-/** Used to detect when a function becomes hot. */
 
+/** Used to detect when a function becomes hot. */
 var HOT_COUNT = 150,
     HOT_SPAN = 16;
+
 /**
  * Sets metadata for `func`.
  *
@@ -17,7 +18,6 @@ var HOT_COUNT = 150,
  * @param {*} data The metadata.
  * @returns {Function} Returns `func`.
  */
-
 var setData = (function() {
     var count = 0,
         lastCalled = 0;

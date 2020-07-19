@@ -1,8 +1,9 @@
 /** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Creates a function that invokes `func` with the `this` binding of the
  * created function and arguments from `start` and beyond provided as an array.
@@ -25,7 +26,6 @@ var nativeMax = Math.max;
  * say('hello', 'fred', 'barney', 'pebbles');
  * // => 'hello fred, barney, & pebbles'
  */
-
 function restParam(func, start) {
     if (typeof func != 'function') {
         throw new TypeError(FUNC_ERROR_TEXT);

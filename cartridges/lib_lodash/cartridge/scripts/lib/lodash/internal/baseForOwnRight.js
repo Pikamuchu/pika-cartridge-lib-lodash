@@ -1,5 +1,6 @@
 var baseForRight = require('./baseForRight'),
     keys = require('../object/keys');
+
 /**
  * The base implementation of `_.forOwnRight` without support for callback
  * shorthands and `this` binding.
@@ -9,7 +10,6 @@ var baseForRight = require('./baseForRight'),
  * @param {Function} iteratee The function invoked per iteration.
  * @returns {Object} Returns `object`.
  */
-
 function baseForOwnRight(object, iteratee) {
     return baseForRight(object, iteratee, keys);
 }

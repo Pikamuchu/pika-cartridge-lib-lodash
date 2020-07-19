@@ -4,6 +4,7 @@ var arrayExtremum = require('./arrayExtremum'),
     isArray = require('../lang/isArray'),
     isIterateeCall = require('./isIterateeCall'),
     toIterable = require('./toIterable');
+
 /**
  * Creates a `_.max` or `_.min` function.
  *
@@ -12,7 +13,6 @@ var arrayExtremum = require('./arrayExtremum'),
  * @param {*} exValue The initial extremum value.
  * @returns {Function} Returns the new extremum function.
  */
-
 function createExtremum(comparator, exValue) {
     return function(collection, iteratee, thisArg) {
         if (thisArg && isIterateeCall(collection, iteratee, thisArg)) {

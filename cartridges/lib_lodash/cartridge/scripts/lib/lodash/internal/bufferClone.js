@@ -1,7 +1,8 @@
 /** Native method references. */
-var global = Function('return this')();
+var global = require('./global');
 var ArrayBuffer = global.ArrayBuffer,
     Uint8Array = global.Uint8Array;
+
 /**
  * Creates a clone of the given array buffer.
  *
@@ -9,7 +10,6 @@ var ArrayBuffer = global.ArrayBuffer,
  * @param {ArrayBuffer} buffer The array buffer to clone.
  * @returns {ArrayBuffer} Returns the cloned array buffer.
  */
-
 function bufferClone(buffer) {
     var result = new ArrayBuffer(buffer.byteLength),
         view = new Uint8Array(result);

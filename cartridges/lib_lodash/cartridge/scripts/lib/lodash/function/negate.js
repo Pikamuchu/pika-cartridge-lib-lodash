@@ -1,5 +1,6 @@
 /** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
+
 /**
  * Creates a function that negates the result of the predicate `func`. The
  * `func` predicate is invoked with the `this` binding and arguments of the
@@ -19,7 +20,6 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  * _.filter([1, 2, 3, 4, 5, 6], _.negate(isEven));
  * // => [1, 3, 5]
  */
-
 function negate(predicate) {
     if (typeof predicate != 'function') {
         throw new TypeError(FUNC_ERROR_TEXT);

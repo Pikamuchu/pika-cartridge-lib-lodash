@@ -1,8 +1,9 @@
 var baseIndexOf = require('../internal/baseIndexOf'),
     binaryIndex = require('../internal/binaryIndex');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Gets the index at which the first occurrence of `value` is found in `array`
  * using [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -31,7 +32,6 @@ var nativeMax = Math.max;
  * _.indexOf([1, 1, 2, 2], 2, true);
  * // => 2
  */
-
 function indexOf(array, value, fromIndex) {
     var length = array ? array.length : 0;
 

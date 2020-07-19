@@ -1,5 +1,6 @@
 var baseDelay = require('../internal/baseDelay'),
     restParam = require('./restParam');
+
 /**
  * Defers invoking the `func` until the current call stack has cleared. Any
  * additional arguments are provided to `func` when it's invoked.
@@ -17,7 +18,6 @@ var baseDelay = require('../internal/baseDelay'),
  * }, 'deferred');
  * // logs 'deferred' after one or more milliseconds
  */
-
 var defer = restParam(function(func, args) {
     return baseDelay(func, 1, args);
 });

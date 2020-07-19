@@ -2,6 +2,7 @@ var arrayFilter = require('../internal/arrayFilter'),
     baseCallback = require('../internal/baseCallback'),
     baseFilter = require('../internal/baseFilter'),
     isArray = require('../lang/isArray');
+
 /**
  * Iterates over elements of `collection`, returning an array of all elements
  * `predicate` returns truthy for. The predicate is bound to `thisArg` and
@@ -51,7 +52,6 @@ var arrayFilter = require('../internal/arrayFilter'),
  * _.pluck(_.filter(users, 'active'), 'user');
  * // => ['barney']
  */
-
 function filter(collection, predicate, thisArg) {
     var func = isArray(collection) ? arrayFilter : baseFilter;
     predicate = baseCallback(predicate, thisArg, 3);

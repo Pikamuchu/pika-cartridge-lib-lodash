@@ -5,6 +5,7 @@ var isArguments = require('./isArguments'),
     isObjectLike = require('../internal/isObjectLike'),
     isString = require('./isString'),
     keys = require('../object/keys');
+
 /**
  * Checks if `value` is empty. A value is considered empty unless it's an
  * `arguments` object, array, string, or jQuery-like collection with a length
@@ -32,7 +33,6 @@ var isArguments = require('./isArguments'),
  * _.isEmpty({ 'a': 1 });
  * // => false
  */
-
 function isEmpty(value) {
     if (value == null) {
         return true;

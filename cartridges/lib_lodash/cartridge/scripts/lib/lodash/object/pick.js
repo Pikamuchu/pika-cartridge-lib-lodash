@@ -3,6 +3,7 @@ var baseFlatten = require('../internal/baseFlatten'),
     pickByArray = require('../internal/pickByArray'),
     pickByCallback = require('../internal/pickByCallback'),
     restParam = require('../function/restParam');
+
 /**
  * Creates an object composed of the picked `object` properties. Property
  * names may be specified as individual arguments or as arrays of property
@@ -29,7 +30,6 @@ var baseFlatten = require('../internal/baseFlatten'),
  * _.pick(object, _.isString);
  * // => { 'user': 'fred' }
  */
-
 var pick = restParam(function(object, props) {
     if (object == null) {
         return {};

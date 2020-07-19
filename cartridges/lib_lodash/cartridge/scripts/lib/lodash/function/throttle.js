@@ -1,8 +1,9 @@
 var debounce = require('./debounce'),
     isObject = require('../lang/isObject');
-/** Used as the `TypeError` message for "Functions" methods. */
 
+/** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
+
 /**
  * Creates a throttled function that only invokes `func` at most once per
  * every `wait` milliseconds. The throttled function comes with a `cancel`
@@ -42,7 +43,6 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  * // cancel a trailing throttled call
  * jQuery(window).on('popstate', throttled.cancel);
  */
-
 function throttle(func, wait, options) {
     var leading = true,
         trailing = true;

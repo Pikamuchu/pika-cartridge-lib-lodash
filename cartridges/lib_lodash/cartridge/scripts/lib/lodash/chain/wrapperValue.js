@@ -1,4 +1,5 @@
 var baseWrapperValue = require('../internal/baseWrapperValue');
+
 /**
  * Executes the chained sequence to extract the unwrapped value.
  *
@@ -12,7 +13,6 @@ var baseWrapperValue = require('../internal/baseWrapperValue');
  * _([1, 2, 3]).value();
  * // => [1, 2, 3]
  */
-
 function wrapperValue() {
     return baseWrapperValue(this.__wrapped__, this.__actions__);
 }

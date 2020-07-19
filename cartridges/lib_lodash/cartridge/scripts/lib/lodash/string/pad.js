@@ -1,11 +1,12 @@
-var global = Function('return this')();
+var global = require('../internal/global');
 var baseToString = require('../internal/baseToString'),
     createPadding = require('../internal/createPadding');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeCeil = Math.ceil,
     nativeFloor = Math.floor,
     nativeIsFinite = global.isFinite;
+
 /**
  * Pads `string` on the left and right sides if it's shorter than `length`.
  * Padding characters are truncated if they can't be evenly divided by `length`.
@@ -28,7 +29,6 @@ var nativeCeil = Math.ceil,
  * _.pad('abc', 3);
  * // => 'abc'
  */
-
 function pad(string, length, chars) {
     string = baseToString(string);
     length = +length;

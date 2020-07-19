@@ -1,21 +1,22 @@
 var baseForIn = require('../internal/baseForIn'),
     isArguments = require('./isArguments'),
     isObjectLike = require('../internal/isObjectLike');
+
 /** `Object#toString` result references. */
-
 var objectTag = '[object Object]';
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * Checks if `value` is a plain object, that is, an object created by the
  * `Object` constructor or one with a `[[Prototype]]` of `null`.
@@ -46,7 +47,6 @@ var objToString = objectProto.toString;
  * _.isPlainObject(Object.create(null));
  * // => true
  */
-
 function isPlainObject(value) {
     var Ctor; // Exit early for non `Object` objects.
 

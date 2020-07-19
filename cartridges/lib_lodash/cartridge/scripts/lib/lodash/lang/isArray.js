@@ -1,21 +1,22 @@
 var getNative = require('../internal/getNative'),
     isLength = require('../internal/isLength'),
     isObjectLike = require('../internal/isObjectLike');
+
 /** `Object#toString` result references. */
-
 var arrayTag = '[object Array]';
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeIsArray = getNative(Array, 'isArray');
+
 /**
  * Checks if `value` is classified as an `Array` object.
  *
@@ -32,7 +33,6 @@ var nativeIsArray = getNative(Array, 'isArray');
  * _.isArray(function() { return arguments; }());
  * // => false
  */
-
 var isArray =
     nativeIsArray ||
     function(value) {

@@ -1,4 +1,5 @@
 var realNames = require('./realNames');
+
 /**
  * Gets the name of `func`.
  *
@@ -6,7 +7,6 @@ var realNames = require('./realNames');
  * @param {Function} func The function to query.
  * @returns {string} Returns the function name.
  */
-
 function getFuncName(func) {
     var result = func.name + '',
         array = realNames[result],

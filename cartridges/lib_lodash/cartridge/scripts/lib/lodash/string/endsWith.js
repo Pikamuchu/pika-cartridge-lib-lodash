@@ -1,7 +1,8 @@
 var baseToString = require('../internal/baseToString');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Checks if `string` ends with the given target string.
  *
@@ -23,7 +24,6 @@ var nativeMin = Math.min;
  * _.endsWith('abc', 'b', 2);
  * // => true
  */
-
 function endsWith(string, target, position) {
     string = baseToString(string);
     target = target + '';

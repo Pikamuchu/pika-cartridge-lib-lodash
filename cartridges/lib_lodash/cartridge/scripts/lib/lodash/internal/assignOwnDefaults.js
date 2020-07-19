@@ -1,8 +1,9 @@
 /** Used for native method references. */
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Used by `_.template` to customize its `_.assign` use.
  *
@@ -16,7 +17,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * @param {Object} object The destination object.
  * @returns {*} Returns the value to assign to the destination object.
  */
-
 function assignOwnDefaults(objectValue, sourceValue, key, object) {
     return objectValue === undefined || !hasOwnProperty.call(object, key) ? sourceValue : objectValue;
 }

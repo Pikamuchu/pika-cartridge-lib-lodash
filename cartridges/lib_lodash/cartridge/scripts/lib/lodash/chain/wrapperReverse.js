@@ -1,6 +1,7 @@
 var LazyWrapper = require('../internal/LazyWrapper'),
     LodashWrapper = require('../internal/LodashWrapper'),
     thru = require('./thru');
+
 /**
  * Reverses the wrapped array so the first element becomes the last, the
  * second element becomes the second to last, and so on.
@@ -21,7 +22,6 @@ var LazyWrapper = require('../internal/LazyWrapper'),
  * console.log(array);
  * // => [3, 2, 1]
  */
-
 function wrapperReverse() {
     var value = this.__wrapped__;
 

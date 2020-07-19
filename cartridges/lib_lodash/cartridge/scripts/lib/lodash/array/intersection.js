@@ -3,6 +3,7 @@ var baseIndexOf = require('../internal/baseIndexOf'),
     createCache = require('../internal/createCache'),
     isArrayLike = require('../internal/isArrayLike'),
     restParam = require('../function/restParam');
+
 /**
  * Creates an array of unique values that are included in all of the provided
  * arrays using [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
@@ -17,7 +18,6 @@ var baseIndexOf = require('../internal/baseIndexOf'),
  * _.intersection([1, 2], [4, 2], [2, 1]);
  * // => [2]
  */
-
 var intersection = restParam(function(arrays) {
     var othLength = arrays.length,
         othIndex = othLength,

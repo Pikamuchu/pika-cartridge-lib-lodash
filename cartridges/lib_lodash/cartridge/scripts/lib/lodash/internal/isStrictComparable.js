@@ -1,4 +1,5 @@
 var isObject = require('../lang/isObject');
+
 /**
  * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
  *
@@ -7,7 +8,6 @@ var isObject = require('../lang/isObject');
  * @returns {boolean} Returns `true` if `value` if suitable for strict
  *  equality comparisons, else `false`.
  */
-
 function isStrictComparable(value) {
     return value === value && !isObject(value);
 }

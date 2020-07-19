@@ -1,4 +1,5 @@
 var isObject = require('../lang/isObject');
+
 /**
  * Checks if `value` is in `cache` mimicking the return signature of
  * `_.indexOf` by returning `0` if the value is found, else `-1`.
@@ -8,7 +9,6 @@ var isObject = require('../lang/isObject');
  * @param {*} value The value to search for.
  * @returns {number} Returns `0` if `value` is found, else `-1`.
  */
-
 function cacheIndexOf(cache, value) {
     var data = cache.data,
         result = typeof value == 'string' || isObject(value) ? data.set.has(value) : data.hash[value];

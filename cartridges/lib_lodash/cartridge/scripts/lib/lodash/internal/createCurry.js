@@ -1,5 +1,6 @@
 var createWrapper = require('./createWrapper'),
     isIterateeCall = require('./isIterateeCall');
+
 /**
  * Creates a `_.curry` or `_.curryRight` function.
  *
@@ -7,7 +8,6 @@ var createWrapper = require('./createWrapper'),
  * @param {boolean} flag The curry bit flag.
  * @returns {Function} Returns the new curry function.
  */
-
 function createCurry(flag) {
     function curryFunc(func, arity, guard) {
         if (guard && isIterateeCall(func, arity, guard)) {

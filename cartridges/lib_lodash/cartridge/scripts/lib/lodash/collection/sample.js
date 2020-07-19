@@ -2,9 +2,10 @@ var baseRandom = require('../internal/baseRandom'),
     isIterateeCall = require('../internal/isIterateeCall'),
     toArray = require('../lang/toArray'),
     toIterable = require('../internal/toIterable');
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Gets a random element or `n` random elements from a collection.
  *
@@ -23,7 +24,6 @@ var nativeMin = Math.min;
  * _.sample([1, 2, 3, 4], 2);
  * // => [3, 1]
  */
-
 function sample(collection, n, guard) {
     if (guard ? isIterateeCall(collection, n, guard) : n == null) {
         collection = toIterable(collection);

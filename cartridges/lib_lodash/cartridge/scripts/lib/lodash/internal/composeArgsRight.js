@@ -1,5 +1,6 @@
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * This function is like `composeArgs` except that the arguments composition
  * is tailored for `_.partialRight`.
@@ -10,7 +11,6 @@ var nativeMax = Math.max;
  * @param {Array} holders The `partials` placeholder indexes.
  * @returns {Array} Returns the new array of composed arguments.
  */
-
 function composeArgsRight(args, partials, holders) {
     var holdersIndex = -1,
         holdersLength = holders.length,

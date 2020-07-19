@@ -1,6 +1,7 @@
 var arrayReduceRight = require('../internal/arrayReduceRight'),
     baseEachRight = require('../internal/baseEachRight'),
     createReduce = require('../internal/createReduce');
+
 /**
  * This method is like `_.reduce` except that it iterates over elements of
  * `collection` from right to left.
@@ -23,6 +24,5 @@ var arrayReduceRight = require('../internal/arrayReduceRight'),
  * }, []);
  * // => [4, 5, 2, 3, 0, 1]
  */
-
 var reduceRight = createReduce(arrayReduceRight, baseEachRight);
 module.exports = reduceRight;

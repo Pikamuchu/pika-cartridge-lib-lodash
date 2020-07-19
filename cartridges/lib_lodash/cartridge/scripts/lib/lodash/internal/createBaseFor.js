@@ -1,4 +1,5 @@
 var toObject = require('./toObject');
+
 /**
  * Creates a base function for `_.forIn` or `_.forInRight`.
  *
@@ -6,7 +7,6 @@ var toObject = require('./toObject');
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new base function.
  */
-
 function createBaseFor(fromRight) {
     return function(object, iteratee, keysFunc) {
         var iterable = toObject(object),

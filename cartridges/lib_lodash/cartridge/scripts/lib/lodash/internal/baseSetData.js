@@ -1,5 +1,6 @@
 var identity = require('../utility/identity'),
     metaMap = require('./metaMap');
+
 /**
  * The base implementation of `setData` without support for hot loop detection.
  *
@@ -8,7 +9,6 @@ var identity = require('../utility/identity'),
  * @param {*} data The metadata.
  * @returns {Function} Returns `func`.
  */
-
 var baseSetData = !metaMap
     ? identity
     : function(func, data) {

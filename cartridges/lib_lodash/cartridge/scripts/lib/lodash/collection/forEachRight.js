@@ -1,6 +1,7 @@
 var arrayEachRight = require('../internal/arrayEachRight'),
     baseEachRight = require('../internal/baseEachRight'),
     createForEach = require('../internal/createForEach');
+
 /**
  * This method is like `_.forEach` except that it iterates over elements of
  * `collection` from right to left.
@@ -20,6 +21,5 @@ var arrayEachRight = require('../internal/arrayEachRight'),
  * }).value();
  * // => logs each value from right to left and returns the array
  */
-
 var forEachRight = createForEach(arrayEachRight, baseEachRight);
 module.exports = forEachRight;

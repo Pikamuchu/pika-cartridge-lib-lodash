@@ -1,5 +1,6 @@
 var baseForOwn = require('./baseForOwn'),
     createBaseEach = require('./createBaseEach');
+
 /**
  * The base implementation of `_.forEach` without support for callback
  * shorthands and `this` binding.
@@ -9,6 +10,5 @@ var baseForOwn = require('./baseForOwn'),
  * @param {Function} iteratee The function invoked per iteration.
  * @returns {Array|Object|string} Returns `collection`.
  */
-
 var baseEach = createBaseEach(baseForOwn);
 module.exports = baseEach;

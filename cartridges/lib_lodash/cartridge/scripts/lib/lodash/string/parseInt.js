@@ -1,12 +1,13 @@
-var global = Function('return this')();
+var global = require('../internal/global');
 var isIterateeCall = require('../internal/isIterateeCall'),
     trim = require('./trim');
+
 /** Used to detect hexadecimal string values. */
-
 var reHasHexPrefix = /^0[xX]/;
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeParseInt = global.parseInt;
+
 /**
  * Converts `string` to an integer of the specified radix. If `radix` is
  * `undefined` or `0`, a `radix` of `10` is used unless `value` is a hexadecimal,
@@ -30,7 +31,6 @@ var nativeParseInt = global.parseInt;
  * _.map(['6', '08', '10'], _.parseInt);
  * // => [6, 8, 10]
  */
-
 function parseInt(string, radix, guard) {
     // Firefox < 21 and Opera < 15 follow ES3 for `parseInt`.
     // Chrome fails to trim leading <BOM> whitespace characters.

@@ -1,10 +1,11 @@
 var keys = require('../object/keys');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * A specialized version of `baseIsEqualDeep` for objects with support for
  * partial deep comparisons.
@@ -19,7 +20,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * @param {Array} [stackB] Tracks traversed `other` objects.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
  */
-
 function equalObjects(object, other, equalFunc, customizer, isLoose, stackA, stackB) {
     var objProps = keys(object),
         objLength = objProps.length,

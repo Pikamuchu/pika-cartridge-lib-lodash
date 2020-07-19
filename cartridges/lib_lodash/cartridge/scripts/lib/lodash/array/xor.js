@@ -2,6 +2,7 @@ var arrayPush = require('../internal/arrayPush'),
     baseDifference = require('../internal/baseDifference'),
     baseUniq = require('../internal/baseUniq'),
     isArrayLike = require('../internal/isArrayLike');
+
 /**
  * Creates an array of unique values that is the [symmetric difference](https://en.wikipedia.org/wiki/Symmetric_difference)
  * of the provided arrays.
@@ -16,7 +17,6 @@ var arrayPush = require('../internal/arrayPush'),
  * _.xor([1, 2], [4, 2]);
  * // => [1, 4]
  */
-
 function xor() {
     var index = -1,
         length = arguments.length;

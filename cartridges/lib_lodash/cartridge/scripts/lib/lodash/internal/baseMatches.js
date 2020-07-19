@@ -1,6 +1,7 @@
 var baseIsMatch = require('./baseIsMatch'),
     getMatchData = require('./getMatchData'),
     toObject = require('./toObject');
+
 /**
  * The base implementation of `_.matches` which does not clone `source`.
  *
@@ -8,7 +9,6 @@ var baseIsMatch = require('./baseIsMatch'),
  * @param {Object} source The object of property values to match.
  * @returns {Function} Returns the new function.
  */
-
 function baseMatches(source) {
     var matchData = getMatchData(source);
 

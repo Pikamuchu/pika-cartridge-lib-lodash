@@ -4,6 +4,7 @@ var arrayCopy = require('../internal/arrayCopy'),
     isFunction = require('../lang/isFunction'),
     isObject = require('../lang/isObject'),
     keys = require('../object/keys');
+
 /**
  * Adds all own enumerable function properties of a source object to the
  * destination object. If `object` is a function then methods are added to
@@ -40,7 +41,6 @@ var arrayCopy = require('../internal/arrayCopy'),
  * _('fred').vowels();
  * // => ['e']
  */
-
 function mixin(object, source, options) {
     var methodNames = baseFunctions(source, keys(source));
     var chain = true,

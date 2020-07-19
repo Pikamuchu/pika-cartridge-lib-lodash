@@ -3,6 +3,7 @@ var baseGet = require('./baseGet'),
     isKey = require('./isKey'),
     last = require('../array/last'),
     toPath = require('./toPath');
+
 /**
  * Invokes the method at `path` on `object`.
  *
@@ -12,7 +13,6 @@ var baseGet = require('./baseGet'),
  * @param {Array} args The arguments to invoke the method with.
  * @returns {*} Returns the result of the invoked method.
  */
-
 function invokePath(object, path, args) {
     if (object != null && !isKey(path, object)) {
         path = toPath(path);

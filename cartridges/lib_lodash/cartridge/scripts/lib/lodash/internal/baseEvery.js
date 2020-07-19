@@ -1,4 +1,5 @@
 var baseEach = require('./baseEach');
+
 /**
  * The base implementation of `_.every` without support for callback
  * shorthands and `this` binding.
@@ -9,7 +10,6 @@ var baseEach = require('./baseEach');
  * @returns {boolean} Returns `true` if all elements pass the predicate check,
  *  else `false`
  */
-
 function baseEvery(collection, predicate) {
     var result = true;
     baseEach(collection, function(value, index, collection) {

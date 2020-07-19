@@ -3,12 +3,13 @@ var isArguments = require('../lang/isArguments'),
     isIndex = require('./isIndex'),
     isLength = require('./isLength'),
     keysIn = require('../object/keysIn');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * A fallback implementation of `Object.keys` which creates an array of the
  * own enumerable property names of `object`.
@@ -17,7 +18,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * @param {Object} object The object to query.
  * @returns {Array} Returns the array of property names.
  */
-
 function shimKeys(object) {
     var props = keysIn(object),
         propsLength = props.length,

@@ -1,6 +1,7 @@
 var createDefaults = require('../internal/createDefaults'),
     merge = require('./merge'),
     mergeDefaults = require('../internal/mergeDefaults');
+
 /**
  * This method is like `_.defaults` except that it recursively assigns
  * default properties.
@@ -19,6 +20,5 @@ var createDefaults = require('../internal/createDefaults'),
  * // => { 'user': { 'name': 'barney', 'age': 36 } }
  *
  */
-
 var defaultsDeep = createDefaults(merge, mergeDefaults);
 module.exports = defaultsDeep;

@@ -1,4 +1,5 @@
 var drop = require('./drop');
+
 /**
  * Gets all but the first element of `array`.
  *
@@ -13,7 +14,6 @@ var drop = require('./drop');
  * _.rest([1, 2, 3]);
  * // => [2, 3]
  */
-
 function rest(array) {
     return drop(array, 1);
 }

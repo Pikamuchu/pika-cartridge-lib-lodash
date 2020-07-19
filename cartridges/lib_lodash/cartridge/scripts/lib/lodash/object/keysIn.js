@@ -3,12 +3,13 @@ var isArguments = require('../lang/isArguments'),
     isIndex = require('../internal/isIndex'),
     isLength = require('../internal/isLength'),
     isObject = require('../lang/isObject');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Creates an array of the own and inherited enumerable property names of `object`.
  *
@@ -31,7 +32,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * _.keysIn(new Foo);
  * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
  */
-
 function keysIn(object) {
     if (object == null) {
         return [];

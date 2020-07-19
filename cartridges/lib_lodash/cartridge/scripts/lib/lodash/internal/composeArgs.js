@@ -1,5 +1,6 @@
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Creates an array that is the composition of partially applied arguments,
  * placeholders, and provided arguments into a single array of arguments.
@@ -10,7 +11,6 @@ var nativeMax = Math.max;
  * @param {Array} holders The `partials` placeholder indexes.
  * @returns {Array} Returns the new array of composed arguments.
  */
-
 function composeArgs(args, partials, holders) {
     var holdersLength = holders.length,
         argsIndex = -1,

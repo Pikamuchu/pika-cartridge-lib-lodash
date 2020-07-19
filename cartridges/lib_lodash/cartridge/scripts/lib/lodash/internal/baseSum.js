@@ -1,4 +1,5 @@
 var baseEach = require('./baseEach');
+
 /**
  * The base implementation of `_.sum` without support for callback shorthands
  * and `this` binding.
@@ -8,7 +9,6 @@ var baseEach = require('./baseEach');
  * @param {Function} iteratee The function invoked per iteration.
  * @returns {number} Returns the sum.
  */
-
 function baseSum(collection, iteratee) {
     var result = 0;
     baseEach(collection, function(value, index, collection) {

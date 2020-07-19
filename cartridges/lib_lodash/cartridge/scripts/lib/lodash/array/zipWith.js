@@ -1,5 +1,6 @@
 var restParam = require('../function/restParam'),
     unzipWith = require('./unzipWith');
+
 /**
  * This method is like `_.zip` except that it accepts an iteratee to specify
  * how grouped values should be combined. The `iteratee` is bound to `thisArg`
@@ -17,7 +18,6 @@ var restParam = require('../function/restParam'),
  * _.zipWith([1, 2], [10, 20], [100, 200], _.add);
  * // => [111, 222]
  */
-
 var zipWith = restParam(function(arrays) {
     var length = arrays.length,
         iteratee = length > 2 ? arrays[length - 2] : undefined,

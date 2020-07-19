@@ -1,5 +1,6 @@
 var baseEach = require('../internal/baseEach'),
     createFind = require('../internal/createFind');
+
 /**
  * Iterates over elements of `collection`, returning the first element
  * `predicate` returns truthy for. The predicate is bound to `thisArg` and
@@ -50,6 +51,5 @@ var baseEach = require('../internal/baseEach'),
  * _.result(_.find(users, 'active'), 'user');
  * // => 'barney'
  */
-
 var find = createFind(baseEach);
 module.exports = find;

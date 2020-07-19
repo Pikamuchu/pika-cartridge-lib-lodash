@@ -1,8 +1,9 @@
 /** Used for native method references. */
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Initializes an array clone.
  *
@@ -10,7 +11,6 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * @param {Array} array The array to clone.
  * @returns {Array} Returns the initialized clone.
  */
-
 function initCloneArray(array) {
     var length = array.length,
         result = new array.constructor(length); // Add array properties assigned by `RegExp#exec`.

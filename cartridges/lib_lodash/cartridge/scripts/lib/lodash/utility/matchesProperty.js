@@ -1,5 +1,6 @@
 var baseClone = require('../internal/baseClone'),
     baseMatchesProperty = require('../internal/baseMatchesProperty');
+
 /**
  * Creates a function that compares the property value of `path` on a given
  * object to `value`.
@@ -24,7 +25,6 @@ var baseClone = require('../internal/baseClone'),
  * _.find(users, _.matchesProperty('user', 'fred'));
  * // => { 'user': 'fred' }
  */
-
 function matchesProperty(path, srcValue) {
     return baseMatchesProperty(path, baseClone(srcValue, true));
 }

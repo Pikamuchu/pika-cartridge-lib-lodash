@@ -4,6 +4,7 @@ var baseGet = require('../internal/baseGet'),
     isKey = require('../internal/isKey'),
     last = require('../array/last'),
     toPath = require('../internal/toPath');
+
 /**
  * This method is like `_.get` except that if the resolved value is a function
  * it's invoked with the `this` binding of its parent object and its result
@@ -32,7 +33,6 @@ var baseGet = require('../internal/baseGet'),
  * _.result(object, 'a.b.c', _.constant('default'));
  * // => 'default'
  */
-
 function result(object, path, defaultValue) {
     var result = object == null ? undefined : object[path];
 

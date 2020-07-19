@@ -1,4 +1,5 @@
 var baseCompareAscending = require('./baseCompareAscending');
+
 /**
  * Used by `_.sortByOrder` to compare multiple properties of a value to another
  * and stable sort them.
@@ -13,7 +14,6 @@ var baseCompareAscending = require('./baseCompareAscending');
  * @param {boolean[]} orders The order to sort by for each property.
  * @returns {number} Returns the sort order indicator for `object`.
  */
-
 function compareMultiple(object, other, orders) {
     var index = -1,
         objCriteria = object.criteria,

@@ -2,19 +2,20 @@ var arrayCopy = require('./arrayCopy'),
     composeArgs = require('./composeArgs'),
     composeArgsRight = require('./composeArgsRight'),
     replaceHolders = require('./replaceHolders');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var BIND_FLAG = 1,
     CURRY_BOUND_FLAG = 4,
     CURRY_FLAG = 8,
     ARY_FLAG = 128,
     REARG_FLAG = 256;
+
 /** Used as the internal argument placeholder. */
-
 var PLACEHOLDER = '__lodash_placeholder__';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
+
 /**
  * Merges the function metadata of `source` into `data`.
  *
@@ -30,7 +31,6 @@ var nativeMin = Math.min;
  * @param {Array} source The source metadata.
  * @returns {Array} Returns `data`.
  */
-
 function mergeData(data, source) {
     var bitmask = data[1],
         srcBitmask = source[1],

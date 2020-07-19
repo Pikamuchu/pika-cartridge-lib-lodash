@@ -1,8 +1,9 @@
-var global = Function('return this')();
+var global = require('./global');
 var createCtorWrapper = require('./createCtorWrapper');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var BIND_FLAG = 1;
+
 /**
  * Creates a function that wraps `func` and invokes it with the optional `this`
  * binding of `thisArg` and the `partials` prepended to those provided to
@@ -15,7 +16,6 @@ var BIND_FLAG = 1;
  * @param {Array} partials The arguments to prepend to those provided to the new function.
  * @returns {Function} Returns the new bound function.
  */
-
 function createPartialWrapper(func, bitmask, thisArg, partials) {
     var isBind = bitmask & BIND_FLAG,
         Ctor = createCtorWrapper(func);

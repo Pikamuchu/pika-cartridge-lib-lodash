@@ -1,5 +1,6 @@
 var baseToString = require('./baseToString'),
     createPadding = require('./createPadding');
+
 /**
  * Creates a function for `_.padLeft` or `_.padRight`.
  *
@@ -7,7 +8,6 @@ var baseToString = require('./baseToString'),
  * @param {boolean} [fromRight] Specify padding from the right.
  * @returns {Function} Returns the new pad function.
  */
-
 function createPadDir(fromRight) {
     return function(string, length, chars) {
         string = baseToString(string);

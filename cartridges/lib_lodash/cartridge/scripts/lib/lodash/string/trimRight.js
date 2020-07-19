@@ -2,6 +2,7 @@ var baseToString = require('../internal/baseToString'),
     charsRightIndex = require('../internal/charsRightIndex'),
     isIterateeCall = require('../internal/isIterateeCall'),
     trimmedRightIndex = require('../internal/trimmedRightIndex');
+
 /**
  * Removes trailing whitespace or specified characters from `string`.
  *
@@ -20,7 +21,6 @@ var baseToString = require('../internal/baseToString'),
  * _.trimRight('-_-abc-_-', '_-');
  * // => '-_-abc'
  */
-
 function trimRight(string, chars, guard) {
     var value = string;
     string = baseToString(string);

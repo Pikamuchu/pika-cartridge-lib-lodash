@@ -1,9 +1,10 @@
 var baseIndexOf = require('./baseIndexOf'),
     cacheIndexOf = require('./cacheIndexOf'),
     createCache = require('./createCache');
-/** Used as the size to enable large array optimizations. */
 
+/** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
+
 /**
  * The base implementation of `_.difference` which accepts a single array
  * of values to exclude.
@@ -13,7 +14,6 @@ var LARGE_ARRAY_SIZE = 200;
  * @param {Array} values The values to exclude.
  * @returns {Array} Returns the new array of filtered values.
  */
-
 function baseDifference(array, values) {
     var length = array ? array.length : 0,
         result = [];

@@ -1,5 +1,6 @@
 var restParam = require('../function/restParam'),
     unzip = require('./unzip');
+
 /**
  * Creates an array of grouped elements, the first of which contains the first
  * elements of the given arrays, the second of which contains the second elements
@@ -15,6 +16,5 @@ var restParam = require('../function/restParam'),
  * _.zip(['fred', 'barney'], [30, 40], [true, false]);
  * // => [['fred', 30, true], ['barney', 40, false]]
  */
-
 var zip = restParam(unzip);
 module.exports = zip;

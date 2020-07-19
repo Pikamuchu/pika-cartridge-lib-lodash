@@ -1,10 +1,11 @@
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeFloor = Math.floor,
     nativeMin = Math.min;
-/** Used as references for the maximum length and index of an array. */
 
+/** Used as references for the maximum length and index of an array. */
 var MAX_ARRAY_LENGTH = 4294967295,
     MAX_ARRAY_INDEX = MAX_ARRAY_LENGTH - 1;
+
 /**
  * This function is like `binaryIndex` except that it invokes `iteratee` for
  * `value` and each element of `array` to compute their sort ranking. The
@@ -18,7 +19,6 @@ var MAX_ARRAY_LENGTH = 4294967295,
  * @returns {number} Returns the index at which `value` should be inserted
  *  into `array`.
  */
-
 function binaryIndexBy(array, value, iteratee, retHighest) {
     value = iteratee(value);
     var low = 0,

@@ -1,6 +1,7 @@
 var baseCallback = require('./baseCallback'),
     baseReduce = require('./baseReduce'),
     isArray = require('../lang/isArray');
+
 /**
  * Creates a function for `_.reduce` or `_.reduceRight`.
  *
@@ -9,7 +10,6 @@ var baseCallback = require('./baseCallback'),
  * @param {Function} eachFunc The function to iterate over a collection.
  * @returns {Function} Returns the new each function.
  */
-
 function createReduce(arrayFunc, eachFunc) {
     return function(collection, iteratee, accumulator, thisArg) {
         var initFromArray = arguments.length < 3;

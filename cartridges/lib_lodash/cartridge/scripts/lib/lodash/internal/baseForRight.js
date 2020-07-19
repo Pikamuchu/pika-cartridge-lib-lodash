@@ -1,4 +1,5 @@
 var createBaseFor = require('./createBaseFor');
+
 /**
  * This function is like `baseFor` except that it iterates over properties
  * in the opposite order.
@@ -9,6 +10,5 @@ var createBaseFor = require('./createBaseFor');
  * @param {Function} keysFunc The function to get the keys of `object`.
  * @returns {Object} Returns `object`.
  */
-
 var baseForRight = createBaseFor(true);
 module.exports = baseForRight;

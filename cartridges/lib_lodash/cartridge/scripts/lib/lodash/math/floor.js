@@ -1,4 +1,5 @@
 var createRound = require('../internal/createRound');
+
 /**
  * Calculates `n` rounded down to `precision`.
  *
@@ -19,6 +20,5 @@ var createRound = require('../internal/createRound');
  * _.floor(4060, -2);
  * // => 4000
  */
-
 var floor = createRound('floor');
 module.exports = floor;

@@ -5,6 +5,7 @@ var boolTag = '[object Boolean]',
     numberTag = '[object Number]',
     regexpTag = '[object RegExp]',
     stringTag = '[object String]';
+
 /**
  * A specialized version of `baseIsEqualDeep` for comparing objects of
  * the same `toStringTag`.
@@ -18,7 +19,6 @@ var boolTag = '[object Boolean]',
  * @param {string} tag The `toStringTag` of the objects to compare.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
  */
-
 function equalByTag(object, other, tag) {
     switch (tag) {
         case boolTag:

@@ -1,7 +1,7 @@
 var isLength = require('../internal/isLength'),
     isObjectLike = require('../internal/isObjectLike');
-/** `Object#toString` result references. */
 
+/** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
     arrayTag = '[object Array]',
     boolTag = '[object Boolean]',
@@ -25,8 +25,8 @@ var arrayBufferTag = '[object ArrayBuffer]',
     uint8ClampedTag = '[object Uint8ClampedArray]',
     uint16Tag = '[object Uint16Array]',
     uint32Tag = '[object Uint32Array]';
-/** Used to identify `toStringTag` values of typed arrays. */
 
+/** Used to identify `toStringTag` values of typed arrays. */
 var typedArrayTags = {};
 typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[
     int16Tag
@@ -40,15 +40,16 @@ typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferT
 ] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[
     setTag
 ] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * Checks if `value` is classified as a typed array.
  *
@@ -65,7 +66,6 @@ var objToString = objectProto.toString;
  * _.isTypedArray([]);
  * // => false
  */
-
 function isTypedArray(value) {
     return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[objToString.call(value)];
 }

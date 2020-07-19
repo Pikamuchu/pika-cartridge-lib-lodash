@@ -1,5 +1,6 @@
 var baseForOwnRight = require('../internal/baseForOwnRight'),
     createForOwn = require('../internal/createForOwn');
+
 /**
  * This method is like `_.forOwn` except that it iterates over properties of
  * `object` in the opposite order.
@@ -25,6 +26,5 @@ var baseForOwnRight = require('../internal/baseForOwnRight'),
  * });
  * // => logs 'b' and 'a' assuming `_.forOwn` logs 'a' and 'b'
  */
-
 var forOwnRight = createForOwn(baseForOwnRight);
 module.exports = forOwnRight;

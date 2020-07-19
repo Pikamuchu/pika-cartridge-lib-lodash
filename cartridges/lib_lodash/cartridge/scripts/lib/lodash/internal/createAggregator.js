@@ -1,6 +1,7 @@
 var baseCallback = require('./baseCallback'),
     baseEach = require('./baseEach'),
     isArray = require('../lang/isArray');
+
 /**
  * Creates a `_.countBy`, `_.groupBy`, `_.indexBy`, or `_.partition` function.
  *
@@ -9,7 +10,6 @@ var baseCallback = require('./baseCallback'),
  * @param {Function} [initializer] The function to initialize the accumulator object.
  * @returns {Function} Returns the new aggregator function.
  */
-
 function createAggregator(setter, initializer) {
     return function(collection, iteratee, thisArg) {
         var result = initializer ? initializer() : {};

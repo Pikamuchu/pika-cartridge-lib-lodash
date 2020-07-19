@@ -2,6 +2,7 @@ var arrayCopy = require('../internal/arrayCopy'),
     getLength = require('../internal/getLength'),
     isLength = require('../internal/isLength'),
     values = require('../object/values');
+
 /**
  * Converts `value` to an array.
  *
@@ -17,7 +18,6 @@ var arrayCopy = require('../internal/arrayCopy'),
  * }(1, 2, 3));
  * // => [2, 3]
  */
-
 function toArray(value) {
     var length = value ? getLength(value) : 0;
 

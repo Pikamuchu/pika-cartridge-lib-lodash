@@ -1,4 +1,5 @@
 var isArray = require('../lang/isArray');
+
 /**
  * The inverse of `_.pairs`; this method returns an object composed from arrays
  * of property names and values. Provide either a single two dimensional array,
@@ -20,7 +21,6 @@ var isArray = require('../lang/isArray');
  * _.zipObject(['fred', 'barney'], [30, 40]);
  * // => { 'fred': 30, 'barney': 40 }
  */
-
 function zipObject(props, values) {
     var index = -1,
         length = props ? props.length : 0,

@@ -1,4 +1,5 @@
 var keys = require('../object/keys');
+
 /**
  * A specialized version of `_.assign` for customizing assigned values without
  * support for argument juggling, multiple sources, and `this` binding `customizer`
@@ -10,7 +11,6 @@ var keys = require('../object/keys');
  * @param {Function} customizer The function to customize assigned values.
  * @returns {Object} Returns `object`.
  */
-
 function assignWith(object, source, customizer) {
     var index = -1,
         props = keys(source),

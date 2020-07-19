@@ -7,6 +7,7 @@ var htmlEscapes = {
     "'": '&#39;',
     '`': '&#96;'
 };
+
 /**
  * Used by `_.escape` to convert characters to HTML entities.
  *
@@ -14,7 +15,6 @@ var htmlEscapes = {
  * @param {string} chr The matched character to escape.
  * @returns {string} Returns the escaped character.
  */
-
 function escapeHtmlChar(chr) {
     return htmlEscapes[chr];
 }

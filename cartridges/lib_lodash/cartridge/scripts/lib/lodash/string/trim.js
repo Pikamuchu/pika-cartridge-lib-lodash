@@ -4,6 +4,7 @@ var baseToString = require('../internal/baseToString'),
     isIterateeCall = require('../internal/isIterateeCall'),
     trimmedLeftIndex = require('../internal/trimmedLeftIndex'),
     trimmedRightIndex = require('../internal/trimmedRightIndex');
+
 /**
  * Removes leading and trailing whitespace or specified characters from `string`.
  *
@@ -25,7 +26,6 @@ var baseToString = require('../internal/baseToString'),
  * _.map(['  foo  ', '  bar  '], _.trim);
  * // => ['foo', 'bar']
  */
-
 function trim(string, chars, guard) {
     var value = string;
     string = baseToString(string);

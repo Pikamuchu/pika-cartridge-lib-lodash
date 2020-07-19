@@ -3,6 +3,7 @@ var arrayMap = require('./arrayMap'),
     baseMap = require('./baseMap'),
     baseSortBy = require('./baseSortBy'),
     compareMultiple = require('./compareMultiple');
+
 /**
  * The base implementation of `_.sortByOrder` without param guards.
  *
@@ -12,7 +13,6 @@ var arrayMap = require('./arrayMap'),
  * @param {boolean[]} orders The sort orders of `iteratees`.
  * @returns {Array} Returns the new sorted array.
  */
-
 function baseSortByOrder(collection, iteratees, orders) {
     var index = -1;
     iteratees = arrayMap(iteratees, function(iteratee) {

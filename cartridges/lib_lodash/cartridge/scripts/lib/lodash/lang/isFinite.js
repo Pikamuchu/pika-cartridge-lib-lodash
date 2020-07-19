@@ -1,6 +1,7 @@
 /* Native method references for those with the same name as other `lodash` methods. */
-var global = Function('return this')();
+var global = require('../internal/global');
 var nativeIsFinite = global.isFinite;
+
 /**
  * Checks if `value` is a finite primitive number.
  *
@@ -28,7 +29,6 @@ var nativeIsFinite = global.isFinite;
  * _.isFinite(Infinity);
  * // => false
  */
-
 function isFinite(value) {
     return typeof value == 'number' && nativeIsFinite(value);
 }

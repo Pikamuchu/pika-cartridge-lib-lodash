@@ -1,6 +1,7 @@
 var getLength = require('../internal/getLength'),
     isLength = require('../internal/isLength'),
     keys = require('../object/keys');
+
 /**
  * Gets the size of `collection` by returning its length for array-like
  * values or the number of own enumerable properties for objects.
@@ -21,7 +22,6 @@ var getLength = require('../internal/getLength'),
  * _.size('pebbles');
  * // => 7
  */
-
 function size(collection) {
     var length = collection ? getLength(collection) : 0;
     return isLength(length) ? length : keys(collection).length;

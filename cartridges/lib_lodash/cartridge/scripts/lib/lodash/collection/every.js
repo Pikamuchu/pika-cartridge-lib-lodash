@@ -3,6 +3,7 @@ var arrayEvery = require('../internal/arrayEvery'),
     baseEvery = require('../internal/baseEvery'),
     isArray = require('../lang/isArray'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Checks if `predicate` returns truthy for **all** elements of `collection`.
  * The predicate is bound to `thisArg` and invoked with three arguments:
@@ -51,7 +52,6 @@ var arrayEvery = require('../internal/arrayEvery'),
  * _.every(users, 'active');
  * // => false
  */
-
 function every(collection, predicate, thisArg) {
     var func = isArray(collection) ? arrayEvery : baseEvery;
 

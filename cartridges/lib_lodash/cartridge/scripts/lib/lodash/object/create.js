@@ -1,6 +1,7 @@
 var baseAssign = require('../internal/baseAssign'),
     baseCreate = require('../internal/baseCreate'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Creates an object that inherits from the given `prototype` object. If a
  * `properties` object is provided its own enumerable properties are assigned
@@ -35,7 +36,6 @@ var baseAssign = require('../internal/baseAssign'),
  * circle instanceof Shape;
  * // => true
  */
-
 function create(prototype, properties, guard) {
     var result = baseCreate(prototype);
 

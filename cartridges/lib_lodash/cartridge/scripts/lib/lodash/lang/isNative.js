@@ -1,19 +1,19 @@
 var isFunction = require('./isFunction'),
     isObjectLike = require('../internal/isObjectLike');
+
 /** Used to detect host constructors (Safari > 5). */
-
 var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
+
 /** Used to resolve the decompiled source of functions. */
-
 var fnToString = Function.prototype.toString;
+
 /** Used to check objects for own properties. */
-
 var hasOwnProperty = objectProto.hasOwnProperty;
-/** Used to detect if a method is native. */
 
+/** Used to detect if a method is native. */
 var reIsNative = RegExp(
     '^' +
         fnToString
@@ -22,6 +22,7 @@ var reIsNative = RegExp(
             .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') +
         '$'
 );
+
 /**
  * Checks if `value` is a native function.
  *
@@ -38,7 +39,6 @@ var reIsNative = RegExp(
  * _.isNative(_);
  * // => false
  */
-
 function isNative(value) {
     if (value == null) {
         return false;

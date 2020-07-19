@@ -1,5 +1,6 @@
 var baseForOwnRight = require('../internal/baseForOwnRight'),
     createFindKey = require('../internal/createFindKey');
+
 /**
  * This method is like `_.findKey` except that it iterates over elements of
  * a collection in the opposite order.
@@ -48,6 +49,5 @@ var baseForOwnRight = require('../internal/baseForOwnRight'),
  * _.findLastKey(users, 'active');
  * // => 'pebbles'
  */
-
 var findLastKey = createFindKey(baseForOwnRight);
 module.exports = findLastKey;

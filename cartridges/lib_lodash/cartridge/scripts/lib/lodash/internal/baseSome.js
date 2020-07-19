@@ -1,4 +1,5 @@
 var baseEach = require('./baseEach');
+
 /**
  * The base implementation of `_.some` without support for callback shorthands
  * and `this` binding.
@@ -9,7 +10,6 @@ var baseEach = require('./baseEach');
  * @returns {boolean} Returns `true` if any element passes the predicate check,
  *  else `false`.
  */
-
 function baseSome(collection, predicate) {
     var result;
     baseEach(collection, function(value, index, collection) {

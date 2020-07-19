@@ -3,6 +3,7 @@ var arraySome = require('../internal/arraySome'),
     baseSome = require('../internal/baseSome'),
     isArray = require('../lang/isArray'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Checks if `predicate` returns truthy for **any** element of `collection`.
  * The function returns as soon as it finds a passing value and does not iterate
@@ -52,7 +53,6 @@ var arraySome = require('../internal/arraySome'),
  * _.some(users, 'active');
  * // => true
  */
-
 function some(collection, predicate, thisArg) {
     var func = isArray(collection) ? arraySome : baseSome;
 

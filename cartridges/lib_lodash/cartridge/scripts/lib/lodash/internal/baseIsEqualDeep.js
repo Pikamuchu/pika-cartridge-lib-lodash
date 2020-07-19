@@ -3,23 +3,24 @@ var equalArrays = require('./equalArrays'),
     equalObjects = require('./equalObjects'),
     isArray = require('../lang/isArray'),
     isTypedArray = require('../lang/isTypedArray');
-/** `Object#toString` result references. */
 
+/** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
     arrayTag = '[object Array]',
     objectTag = '[object Object]';
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
-/** Used to check objects for own properties. */
 
+/** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * A specialized version of `baseIsEqual` for arrays and objects which performs
  * deep comparisons and tracks traversed objects enabling objects with circular
@@ -35,7 +36,6 @@ var objToString = objectProto.toString;
  * @param {Array} [stackB=[]] Tracks traversed `other` objects.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
  */
-
 function baseIsEqualDeep(object, other, equalFunc, customizer, isLoose, stackA, stackB) {
     var objIsArr = isArray(object),
         othIsArr = isArray(other),

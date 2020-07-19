@@ -1,5 +1,6 @@
 var baseIsEqual = require('../internal/baseIsEqual'),
     bindCallback = require('../internal/bindCallback');
+
 /**
  * Performs a deep comparison between two values to determine if they are
  * equivalent. If `customizer` is provided it's invoked to compare values.
@@ -44,7 +45,6 @@ var baseIsEqual = require('../internal/baseIsEqual'),
  * });
  * // => true
  */
-
 function isEqual(value, other, customizer, thisArg) {
     customizer = typeof customizer == 'function' ? bindCallback(customizer, thisArg, 3) : undefined;
     var result = customizer ? customizer(value, other) : undefined;

@@ -3,6 +3,7 @@ var baseEach = require('../internal/baseEach'),
     isArrayLike = require('../internal/isArrayLike'),
     isKey = require('../internal/isKey'),
     restParam = require('../function/restParam');
+
 /**
  * Invokes the method at `path` of each element in `collection`, returning
  * an array of the results of each invoked method. Any additional arguments
@@ -25,7 +26,6 @@ var baseEach = require('../internal/baseEach'),
  * _.invoke([123, 456], String.prototype.split, '');
  * // => [['1', '2', '3'], ['4', '5', '6']]
  */
-
 var invoke = restParam(function(collection, path, args) {
     var index = -1,
         isFunc = typeof path == 'function',

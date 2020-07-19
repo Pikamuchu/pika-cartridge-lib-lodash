@@ -5,18 +5,19 @@ var baseSetData = require('./baseSetData'),
     getData = require('./getData'),
     mergeData = require('./mergeData'),
     setData = require('./setData');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var BIND_FLAG = 1,
     BIND_KEY_FLAG = 2,
     PARTIAL_FLAG = 32,
     PARTIAL_RIGHT_FLAG = 64;
+
 /** Used as the `TypeError` message for "Functions" methods. */
-
 var FUNC_ERROR_TEXT = 'Expected a function';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
+
 /**
  * Creates a function that either curries or invokes `func` with optional
  * `this` binding and partially applied arguments.
@@ -42,7 +43,6 @@ var nativeMax = Math.max;
  * @param {number} [arity] The arity of `func`.
  * @returns {Function} Returns the new wrapped function.
  */
-
 function createWrapper(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
     var isBindKey = bitmask & BIND_KEY_FLAG;
 

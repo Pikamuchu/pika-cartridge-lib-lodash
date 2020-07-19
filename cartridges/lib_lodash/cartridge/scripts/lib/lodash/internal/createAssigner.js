@@ -1,6 +1,7 @@
 var bindCallback = require('./bindCallback'),
     isIterateeCall = require('./isIterateeCall'),
     restParam = require('../function/restParam');
+
 /**
  * Creates a `_.assign`, `_.defaults`, or `_.merge` function.
  *
@@ -8,7 +9,6 @@ var bindCallback = require('./bindCallback'),
  * @param {Function} assigner The function to assign values.
  * @returns {Function} Returns the new assigner function.
  */
-
 function createAssigner(assigner) {
     return restParam(function(object, sources) {
         var index = -1,

@@ -1,5 +1,6 @@
 var map = require('./map'),
     property = require('../utility/property');
+
 /**
  * Gets the property value of `path` from all elements in `collection`.
  *
@@ -23,7 +24,6 @@ var map = require('./map'),
  * _.pluck(userIndex, 'age');
  * // => [36, 40] (iteration order is not guaranteed)
  */
-
 function pluck(collection, path) {
     return map(collection, property(path));
 }

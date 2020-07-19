@@ -1,4 +1,5 @@
 var before = require('./before');
+
 /**
  * Creates a function that is restricted to invoking `func` once. Repeat calls
  * to the function return the value of the first call. The `func` is invoked
@@ -16,7 +17,6 @@ var before = require('./before');
  * initialize();
  * // `initialize` invokes `createApplication` once
  */
-
 function once(func) {
     return before(2, func);
 }

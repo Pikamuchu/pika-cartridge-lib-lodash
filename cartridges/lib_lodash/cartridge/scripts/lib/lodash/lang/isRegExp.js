@@ -1,16 +1,17 @@
 var isObject = require('./isObject');
+
 /** `Object#toString` result references. */
-
 var regexpTag = '[object RegExp]';
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * Checks if `value` is classified as a `RegExp` object.
  *
@@ -27,7 +28,6 @@ var objToString = objectProto.toString;
  * _.isRegExp('/abc/');
  * // => false
  */
-
 function isRegExp(value) {
     return isObject(value) && objToString.call(value) == regexpTag;
 }

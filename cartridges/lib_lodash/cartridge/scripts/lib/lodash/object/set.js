@@ -2,6 +2,7 @@ var isIndex = require('../internal/isIndex'),
     isKey = require('../internal/isKey'),
     isObject = require('../lang/isObject'),
     toPath = require('../internal/toPath');
+
 /**
  * Sets the property value of `path` on `object`. If a portion of `path`
  * does not exist it's created.
@@ -25,7 +26,6 @@ var isIndex = require('../internal/isIndex'),
  * console.log(object.x[0].y.z);
  * // => 5
  */
-
 function set(object, path, value) {
     if (object == null) {
         return object;

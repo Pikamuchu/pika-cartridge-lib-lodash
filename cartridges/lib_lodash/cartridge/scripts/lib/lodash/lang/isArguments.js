@@ -1,14 +1,15 @@
 var isArrayLike = require('../internal/isArrayLike'),
     isObjectLike = require('../internal/isObjectLike');
+
 /** Used for native method references. */
-
 var objectProto = Object.prototype;
+
 /** Used to check objects for own properties. */
-
 var hasOwnProperty = objectProto.hasOwnProperty;
-/** Native method references. */
 
+/** Native method references. */
 var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
 /**
  * Checks if `value` is classified as an `arguments` object.
  *
@@ -25,7 +26,6 @@ var propertyIsEnumerable = objectProto.propertyIsEnumerable;
  * _.isArguments([1, 2, 3]);
  * // => false
  */
-
 function isArguments(value) {
     return (
         isObjectLike(value) &&

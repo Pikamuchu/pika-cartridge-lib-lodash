@@ -2,6 +2,7 @@ var baseCallback = require('../internal/baseCallback'),
     isIterateeCall = require('../internal/isIterateeCall'),
     isObjectLike = require('../internal/isObjectLike'),
     matches = require('./matches');
+
 /**
  * Creates a function that invokes `func` with the `this` binding of `thisArg`
  * and arguments of the created function. If `func` is a property name the
@@ -40,7 +41,6 @@ var baseCallback = require('../internal/baseCallback'),
  * _.filter(users, 'age__gt36');
  * // => [{ 'user': 'fred', 'age': 40 }]
  */
-
 function callback(func, thisArg, guard) {
     if (guard && isIterateeCall(func, thisArg, guard)) {
         thisArg = undefined;

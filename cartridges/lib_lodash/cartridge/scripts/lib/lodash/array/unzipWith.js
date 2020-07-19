@@ -2,6 +2,7 @@ var arrayMap = require('../internal/arrayMap'),
     arrayReduce = require('../internal/arrayReduce'),
     bindCallback = require('../internal/bindCallback'),
     unzip = require('./unzip');
+
 /**
  * This method is like `_.unzip` except that it accepts an iteratee to specify
  * how regrouped values should be combined. The `iteratee` is bound to `thisArg`
@@ -22,7 +23,6 @@ var arrayMap = require('../internal/arrayMap'),
  * _.unzipWith(zipped, _.add);
  * // => [3, 30, 300]
  */
-
 function unzipWith(array, iteratee, thisArg) {
     var length = array ? array.length : 0;
 

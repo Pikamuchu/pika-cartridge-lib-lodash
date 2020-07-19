@@ -1,6 +1,7 @@
 var isArrayLike = require('./isArrayLike'),
     isObject = require('../lang/isObject'),
     values = require('../object/values');
+
 /**
  * Converts `value` to an array-like object if it's not one.
  *
@@ -8,7 +9,6 @@ var isArrayLike = require('./isArrayLike'),
  * @param {*} value The value to process.
  * @returns {Array|Object} Returns the array-like object.
  */
-
 function toIterable(value) {
     if (value == null) {
         return [];

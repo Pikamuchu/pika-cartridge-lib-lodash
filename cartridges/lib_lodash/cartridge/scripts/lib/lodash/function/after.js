@@ -1,10 +1,12 @@
-var global = Function('return this')();
+var global = require('../internal/global');
+
 
 /** Used as the `TypeError` message for "Functions" methods. */
 var FUNC_ERROR_TEXT = 'Expected a function';
-/* Native method references for those with the same name as other `lodash` methods. */
 
+/* Native method references for those with the same name as other `lodash` methods. */
 var nativeIsFinite = global.isFinite;
+
 /**
  * The opposite of `_.before`; this method creates a function that invokes
  * `func` once it's called `n` or more times.
@@ -28,7 +30,6 @@ var nativeIsFinite = global.isFinite;
  * });
  * // => logs 'done saving!' after the two async saves have completed
  */
-
 function after(n, func) {
     if (typeof func != 'function') {
         if (typeof n == 'function') {

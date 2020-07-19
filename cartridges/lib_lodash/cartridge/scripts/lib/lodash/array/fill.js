@@ -1,5 +1,6 @@
 var baseFill = require('../internal/baseFill'),
     isIterateeCall = require('../internal/isIterateeCall');
+
 /**
  * Fills elements of `array` with `value` from `start` up to, but not
  * including, `end`.
@@ -28,7 +29,6 @@ var baseFill = require('../internal/baseFill'),
  * _.fill([4, 6, 8], '*', 1, 2);
  * // => [4, '*', 8]
  */
-
 function fill(array, value, start, end) {
     var length = array ? array.length : 0;
 

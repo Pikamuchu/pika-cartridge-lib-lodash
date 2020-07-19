@@ -1,4 +1,5 @@
 var LazyWrapper = require('./LazyWrapper');
+
 /**
  * Reverses the direction of lazy iteration.
  *
@@ -7,7 +8,6 @@ var LazyWrapper = require('./LazyWrapper');
  * @memberOf LazyWrapper
  * @returns {Object} Returns the new reversed `LazyWrapper` object.
  */
-
 function lazyReverse() {
     if (this.__filtered__) {
         var result = new LazyWrapper(this);

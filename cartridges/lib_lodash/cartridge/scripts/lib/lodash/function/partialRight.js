@@ -1,7 +1,8 @@
 var createPartial = require('../internal/createPartial');
-/** Used to compose bitmasks for wrapper metadata. */
 
+/** Used to compose bitmasks for wrapper metadata. */
 var PARTIAL_RIGHT_FLAG = 64;
+
 /**
  * This method is like `_.partial` except that partially applied arguments
  * are appended to those provided to the new function.
@@ -33,7 +34,6 @@ var PARTIAL_RIGHT_FLAG = 64;
  * sayHelloTo('fred');
  * // => 'hello fred'
  */
-
 var partialRight = createPartial(PARTIAL_RIGHT_FLAG); // Assign default placeholders.
 
 partialRight.placeholder = {};

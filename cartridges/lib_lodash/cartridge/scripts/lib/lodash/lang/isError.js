@@ -1,16 +1,17 @@
 var isObjectLike = require('../internal/isObjectLike');
+
 /** `Object#toString` result references. */
-
 var errorTag = '[object Error]';
-/** Used for native method references. */
 
+/** Used for native method references. */
 var objectProto = Object.prototype;
+
 /**
  * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
-
 var objToString = objectProto.toString;
+
 /**
  * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
  * `SyntaxError`, `TypeError`, or `URIError` object.
@@ -28,7 +29,6 @@ var objToString = objectProto.toString;
  * _.isError(Error);
  * // => false
  */
-
 function isError(value) {
     return isObjectLike(value) && typeof value.message == 'string' && objToString.call(value) == errorTag;
 }

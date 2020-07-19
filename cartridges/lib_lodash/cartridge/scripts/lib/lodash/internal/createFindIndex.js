@@ -1,5 +1,6 @@
 var baseCallback = require('./baseCallback'),
     baseFindIndex = require('./baseFindIndex');
+
 /**
  * Creates a `_.findIndex` or `_.findLastIndex` function.
  *
@@ -7,7 +8,6 @@ var baseCallback = require('./baseCallback'),
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new find function.
  */
-
 function createFindIndex(fromRight) {
     return function(array, predicate, thisArg) {
         if (!(array && array.length)) {

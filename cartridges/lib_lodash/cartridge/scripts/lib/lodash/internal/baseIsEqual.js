@@ -1,6 +1,7 @@
 var baseIsEqualDeep = require('./baseIsEqualDeep'),
     isObject = require('../lang/isObject'),
     isObjectLike = require('./isObjectLike');
+
 /**
  * The base implementation of `_.isEqual` without support for `this` binding
  * `customizer` functions.
@@ -14,7 +15,6 @@ var baseIsEqualDeep = require('./baseIsEqualDeep'),
  * @param {Array} [stackB] Tracks traversed `other` objects.
  * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
  */
-
 function baseIsEqual(value, other, customizer, isLoose, stackA, stackB) {
     if (value === other) {
         return true;

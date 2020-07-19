@@ -1,6 +1,6 @@
 var bufferClone = require('./bufferClone');
-/** `Object#toString` result references. */
 
+/** `Object#toString` result references. */
 var boolTag = '[object Boolean]',
     dateTag = '[object Date]',
     numberTag = '[object Number]',
@@ -16,9 +16,10 @@ var arrayBufferTag = '[object ArrayBuffer]',
     uint8ClampedTag = '[object Uint8ClampedArray]',
     uint16Tag = '[object Uint16Array]',
     uint32Tag = '[object Uint32Array]';
-/** Used to match `RegExp` flags from their coerced string values. */
 
+/** Used to match `RegExp` flags from their coerced string values. */
 var reFlags = /\w*$/;
+
 /**
  * Initializes an object clone based on its `toStringTag`.
  *
@@ -31,7 +32,6 @@ var reFlags = /\w*$/;
  * @param {boolean} [isDeep] Specify a deep clone.
  * @returns {Object} Returns the initialized clone.
  */
-
 function initCloneByTag(object, tag, isDeep) {
     var Ctor = object.constructor;
 

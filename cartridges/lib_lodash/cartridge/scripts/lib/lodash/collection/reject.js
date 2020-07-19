@@ -2,6 +2,7 @@ var arrayFilter = require('../internal/arrayFilter'),
     baseCallback = require('../internal/baseCallback'),
     baseFilter = require('../internal/baseFilter'),
     isArray = require('../lang/isArray');
+
 /**
  * The opposite of `_.filter`; this method returns the elements of `collection`
  * that `predicate` does **not** return truthy for.
@@ -38,7 +39,6 @@ var arrayFilter = require('../internal/arrayFilter'),
  * _.pluck(_.reject(users, 'active'), 'user');
  * // => ['barney']
  */
-
 function reject(collection, predicate, thisArg) {
     var func = isArray(collection) ? arrayFilter : baseFilter;
     predicate = baseCallback(predicate, thisArg, 3);

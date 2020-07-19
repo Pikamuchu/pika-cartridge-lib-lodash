@@ -2,13 +2,14 @@ var baseToString = require('../internal/baseToString'),
     isIterateeCall = require('../internal/isIterateeCall'),
     isObject = require('../lang/isObject'),
     isRegExp = require('../lang/isRegExp');
-/** Used as default options for `_.trunc`. */
 
+/** Used as default options for `_.trunc`. */
 var DEFAULT_TRUNC_LENGTH = 30,
     DEFAULT_TRUNC_OMISSION = '...';
-/** Used to match `RegExp` flags from their coerced string values. */
 
+/** Used to match `RegExp` flags from their coerced string values. */
 var reFlags = /\w*$/;
+
 /**
  * Truncates `string` if it's longer than the given maximum string length.
  * The last characters of the truncated string are replaced with the omission
@@ -49,7 +50,6 @@ var reFlags = /\w*$/;
  * });
  * // => 'hi-diddly-ho there, neig [...]'
  */
-
 function trunc(string, options, guard) {
     if (guard && isIterateeCall(string, options, guard)) {
         options = undefined;

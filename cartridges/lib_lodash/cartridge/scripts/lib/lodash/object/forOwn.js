@@ -1,5 +1,6 @@
 var baseForOwn = require('../internal/baseForOwn'),
     createForOwn = require('../internal/createForOwn');
+
 /**
  * Iterates over own enumerable properties of an object invoking `iteratee`
  * for each property. The `iteratee` is bound to `thisArg` and invoked with
@@ -27,6 +28,5 @@ var baseForOwn = require('../internal/baseForOwn'),
  * });
  * // => logs 'a' and 'b' (iteration order is not guaranteed)
  */
-
 var forOwn = createForOwn(baseForOwn);
 module.exports = forOwn;
