@@ -9,7 +9,8 @@ describe('lodash library', () => {
         const config = {
             basePath: '../cartridges/lib_lodash/cartridge',
             pattern: '*/cartridge/(.*)',
-            maxSearchModuleIterations: 20
+            maxSearchModuleIterations: 20,
+            useRequireOnly: true
         };
         // initialize test config and spies
         _.array = searchquire('*/cartridge/scripts/lib/lodash/array', config);
