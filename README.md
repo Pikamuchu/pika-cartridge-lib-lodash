@@ -1,7 +1,7 @@
 # Cartridge Lib lodash
 
 [![Version](https://img.shields.io/npm/v/cartridge_lib_lodash.svg)](https://npmjs.org/package/cartridge_lib_lodash)
-[![Build Status](https://img.shields.io/travis/pikamachu/pika-cartridge-lib-lodash/master.svg)](https://travis-ci.com/pikamachu/pika-cartridge-lib-lodash)
+[![Build Status](https://travis-ci.com/pikamachu/pika-cartridge-lib-lodash.svg?branch=master)](https://travis-ci.com/pikamachu/pika-cartridge-lib-lodash)
 [![codecov](https://codecov.io/gh/pikamachu/pika-cartridge-lib-lodash/branch/master/graph/badge.svg)](https://codecov.io/gh/pikamachu/pika-cartridge-lib-lodash)
 
 ## Introduction
