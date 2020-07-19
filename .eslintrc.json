@@ -12,7 +12,7 @@
     "rules": {
         "import/no-unresolved": "off",
         "indent": [
-            "error",
+            "warn",
             4,
             {
                 "SwitchCase": 1,
@@ -28,14 +28,42 @@
         "vars-on-top": "off",
         "global-require": "off",
         "no-shadow": [
-            "error",
+            "warn",
             {
                 "allow": ["err", "callback"]
             }
         ],
-        "max-len": ["error", 120],
+        "max-len": ["warn", 120],
         "space-before-function-paren": "off",
         "one-var": "off",
-        "default-case": "off"
+        "default-case": "off",
+        "__coment__": "Setting lodash source code style errors to warn",
+        "eqeqeq": "warn",
+        "block-scoped-var": "warn",
+        "no-self-compare": "warn",
+        "no-nested-ternary": "warn",
+        "no-unused-expressions": "warn",
+        "no-labels": "warn",
+        "no-continue": "warn",
+        "consistent-return": "warn",
+        "no-mixed-operators": "warn",
+        "no-restricted-syntax": "warn",
+        "no-empty": "warn",
+        "quote-props": "warn",
+        "no-underscore-dangle": "warn",
+        "wrap-iife": "warn",
+        "no-multi-spaces": "warn",
+        "no-trailing-spaces": "warn",
+        "no-useless-concat": "warn",
+        "no-new-func": "warn",
+        "no-useless-escape": "warn",
+        "no-void": "warn",
+        "no-cond-assign": "warn",
+        "no-redeclare": "warn",
+        "no-loop-func": "warn",
+        "no-unused-vars": "warn",
+        "operator-assignment": "warn",
+        "dot-notation": "warn",
+        "new-cap": "warn"
     }
 }
