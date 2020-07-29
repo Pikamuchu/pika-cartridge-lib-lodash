@@ -1,6 +1,6 @@
-var sinon = require('sinon');
-var { assert } = require('chai');
-var searchquire = require('searchquire');
+const sinon = require('sinon');
+const { assert } = require('chai');
+const searchquire = require('searchquire');
 
 describe('lodash library', () => {
     let _ = {};

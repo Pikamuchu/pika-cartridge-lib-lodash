@@ -1,6 +1,6 @@
 {
     "name": "cartridge_lib_lodash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cartridge library from lodash node module",
     "main": "cartridges/lib_lodash/cartridge/scripts/lib/lodash/index.js",
     "engines": {
@@ -13,7 +13,8 @@
         "prettier": "prettier --write ./cartridges/**/*.js",
         "test": "nyc mocha --timeout 60000",
         "upload": "sgmf-scripts --upload -- ",
-        "uploadCartridge": "sgmf-scripts --uploadCartridge lib_lodash"
+        "uploadCartridge": "sgmf-scripts --uploadCartridge lib_lodash",
+        "babel": "babel cartridges -d cartridges"
     },
     "repository": {
         "type": "git",
